@@ -10,6 +10,9 @@
             </div>
             <div id = "sidebar-placeholder">
             </div>
+            <div id = "homepage-placeholder">
+            </div>
+            
         </div>
         
        
@@ -27,6 +30,14 @@
                 dataType: 'html',
                 success: function(response){
                     $('#sidebar-placeholder').html(response);
+                }
+            });
+
+            $.ajax({
+                url: './components/homepage.html',
+                dataType: 'html',
+                success: function(response){
+                    $('#homepage-placeholder').html(response);
                 }
             });
 
