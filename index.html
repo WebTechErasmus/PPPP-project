@@ -8,15 +8,25 @@
         <div>
             <div id = "navbar-placeholder">
             </div>
+            <div id = "sidebar-placeholder">
+            </div>
         </div>
         
        
         <script>           
             $.ajax({
-                url: 'navbar.html',
+                url: './components/navbar.html',
                 dataType: 'html',
                 success: function(response){
                     $('#navbar-placeholder').html(response);
+                }
+            });
+
+            $.ajax({
+                url: './components/sidebar.html',
+                dataType: 'html',
+                success: function(response){
+                    $('#sidebar-placeholder').html(response);
                 }
             });
 
