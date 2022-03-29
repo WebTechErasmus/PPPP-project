@@ -2,10 +2,35 @@
 
 <html>
     <head>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
+        <div>
+            <div id = "navbar-placeholder">
+            </div>
+            <div id = "sidebar-placeholder">
+            </div>
+        </div>
         
+       
+        <script>           
+            $.ajax({
+                url: './components/navbar.html',
+                dataType: 'html',
+                success: function(response){
+                    $('#navbar-placeholder').html(response);
+                }
+            });
 
+            $.ajax({
+                url: './components/sidebar.html',
+                dataType: 'html',
+                success: function(response){
+                    $('#sidebar-placeholder').html(response);
+                }
+            });
+
+        
+        </script>
     </body>
 </html>
