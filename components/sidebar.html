@@ -9,24 +9,6 @@
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Publication 1</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
-  <a href="#">Publication 2</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
-  <a href="#">Publication 3</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
 </div>
 
 <div id="main">
@@ -42,7 +24,19 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+
+let texts = "";
+let textsHref = ['#', '#', '#']
+let publications = "";
+let publicationsHref= ['publication.html', 'publication.html', 'publication.html']
+for (let i = 0; i < 3; i++){
+    publications += "<a href=" + publicationsHref[i] + " id=publication" + i +">Publication " + (i+1) + "</a><div><a href=" + textsHref[i] + ">Text 1" + "</a><a href=" + textsHref[i] + ">Text 2" + "</a><a href=" + textsHref[i] + ">Text 3" + "</a> </div>";
+}
+document.getElementById("mySidebar").innerHTML = publications;
+
+
+
 </script>
-   
+  
 </body>
 </html> 
