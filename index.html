@@ -28,7 +28,19 @@
     <navbar-component></navbar-component>
     <sidebar-component></sidebar-component>
 
-    <!-- Optional JavaScript -->
+    <div id="homepage-placeholder"></div>
+
+    <!--script for fetching homepage content-->
+    <script>
+      $.ajax({
+        url: "./components/homepage.html",
+        dataType: "html",
+        success: function (response) {
+          $("#homepage-placeholder").html(response);
+        },
+      });
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -46,6 +58,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- script for sidebar-->
     <script>
       function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
