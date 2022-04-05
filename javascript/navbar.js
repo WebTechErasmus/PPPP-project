@@ -7,7 +7,7 @@ class Navbar extends HTMLElement {
     this.innerHTML = `
     <nav class="navbar navbar-expand-sm navbar-custom">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">Home</a>
+      <a href="../index.html" class="navbar-brand">Home</a>
       <button
         class="navbar-toggler"
         type="button"
