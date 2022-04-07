@@ -73,7 +73,7 @@
         function main() {
 			$.ajax({
 				method: 'GET',
-				url: './texts1.json',
+				url: '../texts1.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
               var li =`<button type='button' class='btn btn-outline-secondary' onclick='load("`+d[i].url+`")'>`+d[i].label+`</button>`

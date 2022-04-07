@@ -23,7 +23,7 @@ function main() {
           ">" +
           d[i].label +
           "</a><div id=publication" +
-          i +
+          (i+1) +
           "></div>";
         $("#mySidebar").append(li);
       }
@@ -33,19 +33,49 @@ function main() {
     },
   });
 
-  $.ajax({
-    method: "GET",
-    url: "../texts.json",
-    success: function (d) {
-      for (var i = 0; i < d.length; i++) {
-        for (var j = 0; j < d.length; j++) {
-          var li = "<a href=" + d[j].url + ">" + d[j].label + "</a>";
-          $("#publication" + i).append(li);
+       //render texts for publication 1
+       $.ajax({
+        method: 'GET',
+        url: "../texts1.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication1').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
         }
-      }
-    },
-    error: function () {
-      alert("No text to show");
-    },
-  });
+      });
+
+      //render texts for publication 2
+      $.ajax({
+        method: 'GET',
+        url: "../texts2.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication2').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
+        }
+      });
+
+      //render texts for publication 3
+      $.ajax({
+        method: 'GET',
+        url: "../texts3.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication3').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
+        }
+      });
+    
 }
