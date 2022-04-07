@@ -1,14 +1,14 @@
 [
     {
         "label": "Publication 1",
-        "url": "/components/publication.html"
+        "url": "/publication1/publication1.html"
     },
     {
         "label": "Publication 2",
-        "url": "/components/publication.html"
+        "url": "/publication2/publication2.html"
     },
     {
         "label": "Publication 3",
-        "url": "/components/publication.html"
+        "url": "/publication3/publication3.html"
     }
 ]

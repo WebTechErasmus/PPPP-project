@@ -31,7 +31,7 @@
     <sidebar-component></sidebar-component>
     <div class="container">
         <div class="row justify-content-around">
-            <h1>Publication X</h1>
+            <h1>Publication 3</h1>
         </div>     
         <div class="row justify-content-around">
                 Information about the publication theme and layout:O
@@ -58,7 +58,7 @@
         function main() {
 			$.ajax({
 				method: 'GET',
-				url: '../texts.json',
+				url: './texts3.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
               var li =`<button type='button' class='btn btn-outline-secondary' onclick='load("`+d[i].url+`")'>`+d[i].label+`</button>`
