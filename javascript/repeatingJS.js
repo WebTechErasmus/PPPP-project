@@ -14,7 +14,7 @@ $(document).ready(main);
 function main() {
   $.ajax({
     method: "GET",
-    url: "publications.json",
+    url: "../publications.json",
     success: function (d) {
       for (var i = 0; i < d.length; i++) {
         var li =
@@ -35,7 +35,7 @@ function main() {
 
   $.ajax({
     method: "GET",
-    url: "texts.json",
+    url: "../texts.json",
     success: function (d) {
       for (var i = 0; i < d.length; i++) {
         for (var j = 0; j < d.length; j++) {
