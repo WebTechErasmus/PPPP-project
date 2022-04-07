@@ -38,13 +38,13 @@ class Navbar extends HTMLElement {
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> About</a>
+            <a class="nav-link" href="../components/about.html"> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Documentation</a>
+            <a class="nav-link" href="../components/documentation.html">Documentation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disclaimer</a>
+            <a class="nav-link" href="../components/disclaimerpage.html">Disclaimer</a>
           </li>
         </ul>
       </div>
