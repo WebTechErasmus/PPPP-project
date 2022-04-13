@@ -32,9 +32,9 @@ function main() {
       alert("No publication to show");
     },
   });
-
+  /*
        //render texts for publication 1
-       $.ajax({
+      $.ajax({
         method: 'GET',
         url: "../texts1.json",
         success: function(d) {
@@ -77,5 +77,5 @@ function main() {
           alert('No text to show')
         }
       });
-    
+    */
 }

@@ -21,30 +21,40 @@
 </head>
 <body>
 
-<h2>Project Name</h2>
+
+<!--
 <div class="container">
   <div id="renderingText" class="row">
   </div>
 </div>
+-->
+<h2 class="row justify-content-around">Project Name</h2>
+<div class="row justify-content-around">
+  <form>
+    <button type="submit" formaction="../publication1/publication1.html" class="btn btn-secondary">Publication 1</button>
+    <button type="submit" formaction="../publication2/publication2.html" class="btn btn-secondary">Publication 2</button>
+    <button type="submit" formaction="../publication3/publication3.html" class="btn btn-secondary">Publication 3</button>
+  </form>
+</div>
 
 <!--
-<button class="accordion">Publication 1</button>
+<button class="btn btn-secondary">Publication 1</button>
 <div class="panel">
   <a href="#">Text 1</a> <br />
   <a href="#">Text 2</a> <br />
   <a href="#">Text 3</a> <br />
 </div>
 
-<button class="accordion">Publication 2</button>
+<button class="accordion" class="btn btn-secondary">Publication 2</button>
 <div class="panel">
     <a href="#">Text 1</a> <br />
     <a href="#">Text 2</a> <br />
     <a href="#">Text 3</a> <br />
 </div>
 
-<button class="accordion">Publication 3</button>
+<button class="accordion" class="btn btn-secondary">Publication 3</button>
 <div class="panel">
-    <a href="#">Text 1</a> <br />
+    <a href="../publication3/publication3.html">Text 1</a> <br />
     <a href="#">Text 2</a> <br />
     <a href="#">Text 3</a> <br />
 </div>
@@ -68,6 +78,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+<!--Script for the publication buttons so the texts appear-->
 <script>
   /*
 var acc = document.getElementsByClassName("accordion");
@@ -86,6 +98,7 @@ for (i = 0; i < acc.length; i++) {
 }*/
 </script>
 <script>
+  /*
 $(document).ready(main);
 
     function main() {
@@ -94,7 +107,7 @@ $(document).ready(main);
         url: '../publications.json',
         success: function(d) {
           for (var i=0; i<d.length; i++) {
-            var li = '<div class="col" ><a href=' + d[i].url + ' >'+d[i].label + '</a><div id=publications' + (i+1) +'></div></div>'
+            var li = '<div class="col" ><a href=' + d[i].url + ' class="link-secondary" >'+d[i].label + '</a><div id=publications' + (i+1) +'></div></div>'
             //var li = `<div class='col'><button type='button' class='btn btn-outline-secondary' onclick='load("`+d[i].url+`")'>`+d[i].label+`</button><div id=publications" `+ i +`"></div></div>`
             $('#renderingText').append(li)
           }	
@@ -148,7 +161,7 @@ $(document).ready(main);
         alert('No text to show')
       }
     });
-  }
+  }*/
     
 </script>
 
