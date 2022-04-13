@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: #694fd5;
+  background-color: #ababab;
 }
 
 .navbar-toggler {
@@ -25,7 +25,7 @@
 
 /* for dropdown only - change the color of droodown */
 .navbar-custom .dropdown-menu {
-  background-color: #694fd5;
+  background-color: #ababab;
 }
 .navbar-custom .dropdown-item {
   color: #ffffff;
