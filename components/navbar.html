@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-two">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -15,6 +15,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/themes.css"/>
     <link rel="stylesheet" href="../css/navbar.css" />
     <title>navbar</title>
   </head>
@@ -47,8 +48,8 @@
                 Theme
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Theme1</a>
-                <a class="dropdown-item" href="#">Theme2</a>
+                <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-one')">Theme1</a>
+                <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-two')">Theme2</a>
               </div>
             </li>
             <li class="nav-item">
@@ -64,6 +65,11 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+      <h1>
+        Hvilken font er dette?
+      </div>
+    </h1>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -81,5 +87,21 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+          localStorage.setItem('theme', themeName);
+          document.documentElement.className = themeName;
+      }
+
+    // Immediately invoked function to set the theme on initial load
+    (function () {
+        if (localStorage.getItem('theme') === 'theme-one') {
+            setTheme('theme-one');
+        } else {
+            setTheme('theme-two');
+        }
+    })();
+  </script>
   </body>
 </html>

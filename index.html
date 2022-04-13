@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en" class="theme-zero">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/publication.css">
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/themes.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Publication</title>
@@ -128,6 +129,23 @@
       });*/
       }
       
+    </script>
+    <!--Script for rendering differenet themes-->
+    <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+      if (localStorage.getItem('theme') === 'theme-zero') {
+          setTheme('theme-zero');
+      } else {
+          setTheme('theme-zero');
+      }
+      })();
     </script>
   </body>
 </html>
