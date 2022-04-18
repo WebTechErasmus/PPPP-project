@@ -7,7 +7,7 @@ class Navbar extends HTMLElement {
     this.innerHTML = `
     <nav class="navbar navbar-expand-sm navbar-custom">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">Home</a>
+      <a href="../index.html" class="navbar-brand">Home</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -33,8 +33,9 @@ class Navbar extends HTMLElement {
               Theme
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Theme1</a>
-              <a class="dropdown-item" href="#">Theme2</a>
+            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-zero')">ThemeNeutral</a>
+            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-one')">Theme1</a>
+            <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-two')">Theme2</a>
             </div>
           </li>
           <li class="nav-item">

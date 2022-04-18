@@ -9,7 +9,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #694fd5;
+    background-color: #696969;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -28,7 +28,7 @@ body {
       padding: 8px 8px 8px 32px;
       text-decoration: none;
       font-size: 10px;
-      color: #818181;
+      color: #696969;
       display: block;
       transition: 0.3s;
     }
@@ -48,7 +48,7 @@ body {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #694fd5;
+    background-color: #696969;
     color: #f1f1f1;
     padding: 10px 15px;
     border: none;

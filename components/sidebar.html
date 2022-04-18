@@ -6,43 +6,94 @@
 
 </head>
 <body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">Publication 1</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
-  <a href="#">Publication 2</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
-  <a href="#">Publication 3</a>
-    <div class="sidebarText">
-        <a href="#">Text 1</a>
-        <a href="#">Text 2</a>
-        <a href="#">Text 3</a>
-    </div>
-</div>
-
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ </button>  
-</div>
-
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+  </div>
+<!--Bootstrap and ajax import-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--functions for the sidebar-->
 <script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-}
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
 </script>
-   
+    <!--Script for rendering different publications and texts-->
+<script>
+    $(document).ready(main);
+
+    function main() {
+      $.ajax({
+        method: 'GET',
+        url: '../publications.json',
+        success: function(d) {
+          for (var i=0; i<d.length; i++) {
+            var li = "<a href=" + d[i].url + ">"+d[i].label + "</a><div id=publication" + (i+1) +"></div>"
+            $('#mySidebar').append(li)
+          }	
+        },
+        error: function() {
+          alert('No publication to show')
+        }
+      });
+
+      //render texts for publication 1
+      $.ajax({
+        method: 'GET',
+        url: "../texts1.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication1').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
+        }
+      });
+
+      //render texts for publication 2
+      $.ajax({
+        method: 'GET',
+        url: "../texts2.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication2').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
+        }
+      });
+
+      //render texts for publication 3
+      $.ajax({
+        method: 'GET',
+        url: "../texts3.json",
+        success: function(d) {
+            for (var j=0; j<d.length; j++){
+              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
+            $('#publication3').append(li)
+            }
+        },
+        error: function() {
+          alert('No text to show')
+        }
+      });
+    }
+</script>
+
 </body>
 </html> 
