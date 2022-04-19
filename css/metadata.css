@@ -46,16 +46,27 @@ body {
   background-color: #ccc;
 }
 
-.div1 {
+.info {
   border-color: black;
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
   height: 60%;
   position: relative;
+  display: none;
+}
+.quotes {
+  border-color: black;
+  background-color: #f1f1f1;
+  margin-left: 7%;
+  margin-right: 7%;
+  height: 60%;
+  position: relative;
+  display: none;
+  display: none;
 }
 
-.div1 h3 {
+.info h3 {
   color: black;
   text-decoration: underline;
   font-weight: bold;
@@ -70,7 +81,6 @@ body {
   border: none;
   outline: none;
   position: absolute;
-  display: block;
   bottom: 0;
   margin-left: 5px;
   margin-bottom: 5px;

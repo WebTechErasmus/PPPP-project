@@ -13,41 +13,58 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <link rel="stylesheet" href="../css/metadata.css" />
   </head>
   <body>
     <div class="sidebar">
-      <h3>Metadata & additional services</h3>
+      <h3>Metadata &amp; additional services</h3>
       <div class="button-group" id="showall">
-        <button class="activeButton" target="1">Info</button>
-        <button class="activeButton" target="2">Quotes</button>
-        <button class="activeButton" target="3">Additional</button>
-        <button class="activeButton" target="4">Additional</button>
+        <!--javascript:void(0) if the redirection path is undefined the browser stays on the same page -->
+        <button class="activeButton" href="javascript:void(0);" divId="div1">
+          Info
+        </button>
+        <button class="activeButton" href="javascript:void(0);" divId="div2">
+          Quotes
+        </button>
+        <button class="activeButton" href="javascript:void(0);" divId="div3">
+          Additional
+        </button>
+        <button class="activeButton" href="javascript:void(0);" divId="div4">
+          Additional
+        </button>
       </div>
-      <div class="div1" class="target">
+      <div class="info" class="open_Div" id="div1">
         <h3>Info</h3>
         <ul>
           <li>Author:</li>
           <li>Title:</li>
           <li>Content:</li>
         </ul>
-        <button class="back-button">Back</button>
+        <button class="back-button" divId="div1">Back</button>
       </div>
-      <div class="div2" class="target">
-        <h3>hei</h3>
+      <div class="quotes" class="open_Div" id="div2">
+        <h3>Quotes</h3>
+        <button class="back-button" divId="div2">Back</button>
       </div>
     </div>
 
     <script>
-      jQuery(function () {
-        jQuery("#showall").click(function () {
-          jQuery("button-group").show();
-        });
-        jQuery(".activeButton").click(function () {
-          jQuery(".target").hide();
-          jQuery("#div" + $(this).attr("target")).show;
-        });
+      $(".activeButton").bind("click", function () {
+        $("#showall").hide();
+        $(".openDiv").hide();
+        var divId = $(this).attr("divId");
+        $("#" + divId).show();
+      });
+
+      $(".back-button").bind("click", function () {
+        var divId = $(this).attr("divId");
+        $("#" + divId).hide();
+        $("#showall").show();
       });
     </script>
   </body>
