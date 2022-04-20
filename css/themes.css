@@ -5,42 +5,76 @@ body {
     height: 100%;
     width: 100%;
 }
-.theme-zero {
-    --color-primary: #fd6f53;
-    --color-secondary: #fbfbfe;
-    --color-accent: #ababab;
+.theme-bauhaus {
+    --color-primary: #be1e2d;
+    --color-secondary: #ffde17;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
     --font-color: #000000;
-    --font-family: "Times New Roman", serif;
+    --font-color-button: #ffffff;
+    --font-family: "Arial", sans-serif;
+    --border-radius-button: 50%;
+    --width-button: 100px;
+    --height-button: 100px;
 }
 .theme-one {
     --color-primary: #127475;
     --color-secondary: #F5DFBB;
-    --color-accent: #F2542D;
+    --color-accent: #F5DFBB;
+    --color-background: #F5DFBB;
     --font-color: #000000;
+    --font-color-button: #000000;
     --font-family: "Lucida Handwriting", cursive;
+    --border-radius-button: 5px;
+    --width-button: ;
+    --height-button: ;
 }
 .theme-two {
     --color-primary: #DBCBD8;
     --color-secondary: #F2FDFF;
-    --color-accent: #9AD4D6;
+    --color-accent: #F2FDFF;
+    --color-background: #F2FDFF;
     --font-color: #101935;
+    --font-color-button: #101935;
     --font-family: "Papyrus", fantasy;
+    --border-radius-button: 5px;
+    --width-button: ;
+    --height-button: ;
 }
 .container {
     width: 100%;
     height: 100%;
-    background: var(--color-secondary);
+    background: var(--color-background);
     font-family: var(--font-family);
     color: var(--font-color);
 }
 .container h1 {
     color: var(--font-color);
     font-family: var(--font-family);
+    font-weight: bold;
+}
+
+.container h3 {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-weight: bold;
 }
 .container button {
-    color: var(--font-color);
+    height: var(--height-button);
+    width: var(--width-button);
+    color: var(--font-color-button);
     background: var(--color-primary);
+    border: 0;
+    border-radius: var(--border-radius-button);
+    text-align: center;
+    font-size: small;
+}
+
+.container p {
+    color: var(--font-color-button);
+    background: var(--color-accent);
     padding: 10px 20px;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0px;
 }
+

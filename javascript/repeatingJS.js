@@ -88,9 +88,9 @@ function setTheme(themeName) {
 
 // Immediately invoked function to set the theme on initial load
 (function () {
-      if (localStorage.getItem('theme') === 'theme-zero') {
-          setTheme('theme-zero');
+      if (localStorage.getItem('theme') === 'theme-bauhaus') {
+          setTheme('theme-bauhaus');
       } else {
-          setTheme('theme-zero');
+          setTheme('theme-bauhaus');
       }
 })();
