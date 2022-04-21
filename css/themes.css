@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rye&family=Updock&display=swap');
 html,
 body {
     margin: 0;
@@ -13,30 +14,34 @@ body {
     --font-color: #000000;
     --font-color-button: #ffffff;
     --font-family: "Arial", sans-serif;
+    --font-header: "Major Mono Display", monospace;
     --border-radius-button: 50%;
     --width-button: 100px;
     --height-button: 100px;
 }
-.theme-one {
+
+.theme-art_nouveau {
     --color-primary: #127475;
     --color-secondary: #F5DFBB;
     --color-accent: #F5DFBB;
     --color-background: #F5DFBB;
     --font-color: #000000;
     --font-color-button: #000000;
-    --font-family: "Lucida Handwriting", cursive;
+    --font-family: "Updock", cursive;
+    --font-header: "Updock", cursive;
     --border-radius-button: 5px;
     --width-button: ;
     --height-button: ;
 }
-.theme-two {
+.theme-art_deco {
     --color-primary: #DBCBD8;
     --color-secondary: #F2FDFF;
     --color-accent: #F2FDFF;
     --color-background: #F2FDFF;
     --font-color: #101935;
     --font-color-button: #101935;
-    --font-family: "Papyrus", fantasy;
+    --font-family: "Rye", cursive;
+    --font-header: "Rye", cursive;
     --border-radius-button: 5px;
     --width-button: ;
     --height-button: ;
@@ -50,7 +55,7 @@ body {
 }
 .container h1 {
     color: var(--font-color);
-    font-family: var(--font-family);
+    font-family: var(--font-header);
     font-weight: bold;
 }
 

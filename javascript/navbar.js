@@ -33,9 +33,9 @@ class Navbar extends HTMLElement {
               Theme
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-bauhaus')">ThemeNeutral</a>
-            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-one')">Theme1</a>
-            <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-two')">Theme2</a>
+            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-bauhaus')">Bauhaus</a>
+            <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-art_nouveau')">Art Nouveau</a>
+            <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-art_deco')">Art Deco</a>
             </div>
           </li>
           <li class="nav-item">
