@@ -19,6 +19,7 @@ body {
     --border-radius-button: 50%;
     --width-button: 100px;
     --height-button: 100px;
+    --border-header: solid;
 }
 
 .theme-art_nouveau {
@@ -33,26 +34,28 @@ body {
     --font-family: "Arial";
     --font-header: "Sofia", cursive;
     --border-radius-button: 5px;
-    --width-button: ;
-    --height-button: ;
+    --width-button: 120px;
+    --height-button: 50px;
+    --border-header: double;
 }
 .theme-art_deco {
     --color-primary: #1c2841;
     --color-secondary: #3f647e;
     --color-accent: #edf3af;
     --color-third: #3f647e;
-    --color-background: #d9d9d9;
-    --font-color: #101935;
+    --color-background: #1c2841;
+    --font-color: #ffffff;
     --font-color-button: #ffffff;
     --font-color-header: #D4AF37;
     --font-family: "Arial";
     --font-header: "Limelight", cursive;
     --border-radius-button: 5px;
-    --width-button: ;
-    --height-button: ;
+    --width-button: 120px;
+    --height-button: 50px;
+    --border-header: double;
 }
 .container {
-    width: 100%;
+    width: 60%;
     height: 100%;
     font-family: var(--font-family);
     color: var(--font-color);
@@ -60,11 +63,16 @@ body {
 .container h1 {
     color: var(--font-color-header);
     font-family: var(--font-header);
-    border-style: double;
+    border-style: var(--border-header);
+}
+
+.container h2 {
+    color: var(--font-color-header);
+    font-family: var(--font-header);
 }
 
 .container h3 {
-    color: var(--font-color);
+    color: var(--font-color-header);
     font-family: var(--font-family);
     font-weight: bold;
 }
@@ -76,7 +84,7 @@ body {
     border: 0;
     border-radius: var(--border-radius-button);
     text-align: center;
-    font-size: small;
+    font-size: 15px;
 }
 
 .container p {
@@ -84,6 +92,16 @@ body {
 }
 
 #text {
+    display: none;
+}
+
+#file {
+    padding: 20px;
     background-color: var(--color-background);
-    border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 30%;
+}
 }

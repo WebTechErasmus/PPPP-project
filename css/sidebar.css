@@ -76,3 +76,9 @@ body {
     font-size: 10px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .sidebar a {
+    font-size: 10px;
+  }
+}
