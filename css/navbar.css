@@ -1,5 +1,8 @@
 .navbar-custom {
   background-color: #696969;
+  display: flex;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-toggler {

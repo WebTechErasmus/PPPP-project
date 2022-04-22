@@ -1,22 +1,18 @@
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidebar {
+.sidebarMetadata {
   height: 100%;
-  width: 250px;
+  width: 225px;
   position: fixed;
-  z-index: 1;
-  top: 0;
   right: 0;
-  padding-top: 40px;
-  background-color: RGBA(42, 26, 109, 0.56);
+  top: 0;
+  padding-top: 60px;
+  margin-top: 2%;
+  background-color: #a3a3a3;
 }
 
-.sidebar h3 {
+.sidebarMetadata h4 {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #f1f1f1;
   display: block;
 }
@@ -84,4 +80,8 @@ body {
   bottom: 0;
   margin-left: 5px;
   margin-bottom: 5px;
+}
+
+.openbtn {
+  margin-top: 56px;
 }
