@@ -1,13 +1,16 @@
 #texts a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color:#444;
-    display: block;
-    transition: 0.3s;
-  }
-  
-#texts a:hover {
-    color: #f1f1f1;
-  }
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #444;
+  display: block;
+  transition: 0.3s;
+}
 
+#texts a:hover {
+  color: #f1f1f1;
+}
+
+.container {
+  margin-top: 70px;
+}
