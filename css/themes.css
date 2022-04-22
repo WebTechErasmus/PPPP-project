@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rye&family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Rye&family=Sofia&display=swap');
 html,
 body {
     margin: 0;
@@ -13,6 +13,7 @@ body {
     --color-background: #ffffff;
     --font-color: #000000;
     --font-color-button: #ffffff;
+    --font-header: #000000;
     --font-family: "Arial", sans-serif;
     --font-header: "Major Mono Display", monospace;
     --border-radius-button: 50%;
@@ -21,27 +22,31 @@ body {
 }
 
 .theme-art_nouveau {
-    --color-primary: #127475;
-    --color-secondary: #F5DFBB;
-    --color-accent: #F5DFBB;
-    --color-background: #F5DFBB;
+    --color-primary: #879c7d;
+    --color-secondary: #a52b36;
+    --color-accent: #f6c25d;
+    --color-third: #cbc385;
+    --color-background: #fbd499;
     --font-color: #000000;
     --font-color-button: #000000;
-    --font-family: "Updock", cursive;
-    --font-header: "Updock", cursive;
+    --font-color-header: #000000;
+    --font-family: "Arial";
+    --font-header: "Sofia", cursive;
     --border-radius-button: 5px;
     --width-button: ;
     --height-button: ;
 }
 .theme-art_deco {
-    --color-primary: #DBCBD8;
-    --color-secondary: #F2FDFF;
-    --color-accent: #F2FDFF;
-    --color-background: #F2FDFF;
+    --color-primary: #1c2841;
+    --color-secondary: #3f647e;
+    --color-accent: #edf3af;
+    --color-third: #3f647e;
+    --color-background: #d9d9d9;
     --font-color: #101935;
-    --font-color-button: #101935;
-    --font-family: "Rye", cursive;
-    --font-header: "Rye", cursive;
+    --font-color-button: #ffffff;
+    --font-color-header: #D4AF37;
+    --font-family: "Arial";
+    --font-header: "Limelight", cursive;
     --border-radius-button: 5px;
     --width-button: ;
     --height-button: ;
@@ -49,14 +54,13 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    background: var(--color-background);
     font-family: var(--font-family);
     color: var(--font-color);
 }
 .container h1 {
-    color: var(--font-color);
+    color: var(--font-color-header);
     font-family: var(--font-header);
-    font-weight: bold;
+    border-style: double;
 }
 
 .container h3 {
@@ -76,10 +80,10 @@ body {
 }
 
 .container p {
-    color: var(--font-color-button);
-    background: var(--color-accent);
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 0px;
+    color: var(--font-color);
 }
 
+#text {
+    background-color: var(--color-background);
+    border-radius: 25px;
+}
