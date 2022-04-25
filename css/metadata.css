@@ -8,6 +8,16 @@
   margin-top: 2%;
   background-color: #a3a3a3;
 }
+.sidebarMetadataClosed {
+  height: 100%;
+  width: 3%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 60px;
+  margin-top: 2%;
+  background-color: #a3a3a3;
+}
 
 .sidebarMetadata h4 {
   padding: 6px 8px 6px 16px;
