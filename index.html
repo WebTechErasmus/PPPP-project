@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/themes.css"/>
         
     <title>Publication</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="../javascript/sidebar.js" type="text/javascript" defer></script>
     <script src="../javascript/navbar.js" type="text/javascript" defer></script>
   </head>
@@ -30,25 +30,39 @@
     <navbar-component></navbar-component>
     <sidebar-component></sidebar-component>
     
-    <div id="homepage-placeholder"></div>
-   
+    <div class="container">
+      <div class="row justify-content-around">
+        <h1>Project Name</h1>
+      </div>    
+          <form id="form" class="row justify-content-around">
+            <button type="submit" formaction="../publication1/publication1.html" class="btn btn-secondary">Publication 1</button>
+            <button type="submit" formaction="../publication2/publication2.html" class="btn btn-secondary">Publication 2</button>
+            <button type="submit" formaction="../publication3/publication3.html" class="btn btn-secondary">Publication 3</button>
+          </form>
     
-   
-
+    </div>
     <!--Bootstrap and ajax import-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-      $.ajax({
-        url: "./components/homepage.html",
-        dataType: "html",
-        success: function (response) {
-          $("#homepage-placeholder").html(response);
-        },
-      });
-    </script>
+
+        <!--Script for rendering differenet themes-->
+        <script>
+          // function to set a given theme/color-scheme
+          function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+          }
+    
+          // Immediately invoked function to set the theme on initial load
+          (function () {
+          if (localStorage.getItem('theme') === 'theme-bauhaus') {
+              setTheme('theme-bauhaus');
+          } else {
+              setTheme('theme-bauhaus');
+          }
+          })();
+        </script>
 
     <!--functions for the sidebar-->
     <script>
@@ -86,70 +100,8 @@
             alert("No publication to show");
           },
         });
-      /*
-       //render texts for publication 1
-      $.ajax({
-        method: 'GET',
-        url: "./texts1.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication1').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });
-
-      //render texts for publication 2
-      $.ajax({
-        method: 'GET',
-        url: "./texts2.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication2').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });
-
-      //render texts for publication 3
-      $.ajax({
-        method: 'GET',
-        url: "./texts3.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication3').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });*/
       }
-      
     </script>
-    <!--Script for rendering differenet themes-->
-    <script>
-      // function to set a given theme/color-scheme
-      function setTheme(themeName) {
-        localStorage.setItem('theme', themeName);
-        document.documentElement.className = themeName;
-      }
 
-      // Immediately invoked function to set the theme on initial load
-      (function () {
-      if (localStorage.getItem('theme') === 'theme-bauhaus') {
-          setTheme('theme-bauhaus');
-      } else {
-          setTheme('theme-bauhaus');
-      }
-      })();
-    </script>
   </body>
 </html>
