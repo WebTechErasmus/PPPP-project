@@ -1,3 +1,18 @@
+.theme-bauhaus{
+  --color: #21409a;
+  --color-hover: #193687;
+}
+
+.theme-art_nouveau{
+  --color: #d4c3a5;
+  --color-hover: #879c7d;
+}
+
+.theme-art_deco {
+  --color: #dbc48e;
+  --color-hover: #bb9355
+}
+
 .sidebarMetadata {
   height: 100%;
   width: 15%;
@@ -6,7 +21,7 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: #a3a3a3;
+  background-color: var(--color);
 }
 .sidebarMetadataClosed {
   height: 100%;
@@ -16,7 +31,7 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: #a3a3a3;
+  background-color: var(--color);
 }
 
 .sidebarMetadata h4 {
@@ -49,7 +64,7 @@
 }
 
 .activeButton:hover {
-  background-color: #ccc;
+  background-color: var(--color-hover);
 }
 
 .info {
@@ -79,8 +94,8 @@
 }
 
 .back-button {
-  background-color: #694fd5;
-  border: #694fd5;
+  background-color: var(--color-hover);
+  border: var(--color-hover);
   color: #f1f1f1;
   padding: 5px 7px;
   cursor: pointer;
