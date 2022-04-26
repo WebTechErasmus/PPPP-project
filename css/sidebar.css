@@ -4,12 +4,12 @@ body {
 
 .theme-bauhaus{
   --color: #21409a;
-  --color-hover: #white;
+  --color-hover: #193687;
 }
 
 .theme-art_nouveau{
   --color: #d4c3a5;
-  --color-hover: #white;
+  --color-hover: #879c7d;
 }
 
 .theme-art_deco {
