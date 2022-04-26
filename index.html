@@ -56,11 +56,13 @@
     
           // Immediately invoked function to set the theme on initial load
           (function () {
-          if (localStorage.getItem('theme') === 'theme-bauhaus') {
+            if (localStorage.getItem('theme') === 'theme-bauhaus') {
               setTheme('theme-bauhaus');
-          } else {
-              setTheme('theme-bauhaus');
-          }
+              } else if (localStorage.getItem('theme') === 'theme-art_nouveau') {
+                setTheme('theme-art_nouveau');
+              } else {
+              setTheme('theme-art_deco');
+            }
           })();
         </script>
 

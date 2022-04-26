@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Rye&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Quintessential&family=Rye&family=Sofia&display=swap');
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    background-image: var(--background-img);
 }
 .theme-bauhaus {
     --color-primary: #be1e2d;
@@ -20,6 +21,7 @@ body {
     --width-button: 100px;
     --height-button: 100px;
     --border-header: solid;
+    --text-transform: lowercase;
 }
 
 .theme-art_nouveau {
@@ -31,12 +33,13 @@ body {
     --font-color: #000000;
     --font-color-button: #000000;
     --font-color-header: #000000;
-    --font-family: "Arial";
+    --font-family: "Quintessential", cursive;
     --font-header: "Sofia", cursive;
     --border-radius-button: 5px;
     --width-button: 120px;
     --height-button: 50px;
     --border-header: double;
+    --background-img: url("../img/background_Art_nouveau.jpg")
 }
 .theme-art_deco {
     --color-primary: #1c2841;
@@ -54,16 +57,21 @@ body {
     --height-button: 50px;
     --border-header: double;
 }
+
 .container {
     width: 60%;
     height: 100%;
     font-family: var(--font-family);
     color: var(--font-color);
+    text-transform: var(--text-transform);
+    
 }
 .container h1 {
     color: var(--font-color-header);
     font-family: var(--font-header);
     border-style: var(--border-header);
+    text-transform: none;
+    background-color: #ffffff;
 }
 
 .container h2 {
@@ -100,8 +108,12 @@ body {
     background-color: var(--color-background);
 }
 
+.container img {
+    width: 70%
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         width: 30%;
-}
+    }
 }
