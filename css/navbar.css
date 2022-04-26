@@ -1,12 +1,24 @@
+.theme-bauhaus{
+  --color: #21409a;
+}
+
+.theme-art_nouveau{
+  --color: #d4c3a5;
+}
+
+.theme-art_deco {
+  --color: #dbc48e;
+}
+
 .navbar-custom {
-  background-color: #696969;
+  background-color: var(--color);
   display: flex;
   width: 100%;
   position: fixed;
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 /* change the brand and text color */
@@ -28,13 +40,13 @@
 
 /* for dropdown only - change the color of droodown */
 .navbar-custom .dropdown-menu {
-  background-color: #696969;
+  background-color: var(--color);
 }
 .navbar-custom .dropdown-item {
   color: #ffffff;
 }
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
-  color: #333333;
+  color: var(--color);
   background-color: rgba(255, 255, 255, 0.5);
 }

@@ -2,6 +2,21 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.theme-bauhaus{
+  --color: #21409a;
+  --color-hover: #white;
+}
+
+.theme-art_nouveau{
+  --color: #d4c3a5;
+  --color-hover: #white;
+}
+
+.theme-art_deco {
+  --color: #dbc48e;
+  --color-hover: #bb9355
+}
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -9,7 +24,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #696969;
+  background-color: var(--color);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -28,13 +43,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 10px;
-  color: #696969;
+  color: var(--color);
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #444;
+  color: var(--color-hover);
 }
 
 .sidebar .closebtn {
@@ -48,7 +63,7 @@ body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #696969;
+  background-color: var(--color);
   color: #f1f1f1;
   padding: 10px 15px;
   border: none;
@@ -56,7 +71,7 @@ body {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: var(--color-hover);
 }
 
 #main {

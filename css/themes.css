@@ -5,7 +5,8 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-image: var(--background-img);
+    background: var(--background-img);
+    background-position: center;
 }
 .theme-bauhaus {
     --color-primary: #be1e2d;
@@ -38,7 +39,6 @@ body {
     --border-radius-button: 5px;
     --width-button: 120px;
     --height-button: 50px;
-    --border-header: double;
     --background-img: url("../img/background_Art_nouveau.jpg")
 }
 .theme-art_deco {
@@ -46,16 +46,18 @@ body {
     --color-secondary: #3f647e;
     --color-accent: #edf3af;
     --color-third: #3f647e;
-    --color-background: #1c2841;
+    --color-background: black;
     --font-color: #ffffff;
     --font-color-button: #ffffff;
-    --font-color-header: #D4AF37;
+    --font-color-header: #b49b5b;
     --font-family: "Arial";
     --font-header: "Limelight", cursive;
     --border-radius-button: 5px;
     --width-button: 120px;
     --height-button: 50px;
     --border-header: double;
+    --background-img: #000000 url("../img/background_art_deco.png") repeat-y;
+    --background-size: contain;
 }
 
 .container {
@@ -64,14 +66,12 @@ body {
     font-family: var(--font-family);
     color: var(--font-color);
     text-transform: var(--text-transform);
-    
 }
 .container h1 {
     color: var(--font-color-header);
     font-family: var(--font-header);
     border-style: var(--border-header);
     text-transform: none;
-    background-color: #ffffff;
 }
 
 .container h2 {
