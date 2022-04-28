@@ -5,7 +5,10 @@ class Metadata extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <div class="sidebarMetadata" >
+    <div class="sidebarMetadata" id="metadata">
+    <div class="closeMetadata" id="closeMetadata">
+    <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="" title="" >
+    </div>
       <h4>Metadata &amp; additional services</h4>
       <div class="button-group" id="showall">
         <!--javascript:void(0) if the redirection path is undefined the browser stays on the same page -->
