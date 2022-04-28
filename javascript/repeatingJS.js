@@ -32,52 +32,6 @@ function main() {
       alert("No publication to show");
     },
   });
-  /*
-       //render texts for publication 1
-      $.ajax({
-        method: 'GET',
-        url: "../texts1.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication1').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });
-
-      //render texts for publication 2
-      $.ajax({
-        method: 'GET',
-        url: "../texts2.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication2').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });
-
-      //render texts for publication 3
-      $.ajax({
-        method: 'GET',
-        url: "../texts3.json",
-        success: function(d) {
-            for (var j=0; j<d.length; j++){
-              var li = "<a href=" + d[j].url  + ">"+d[j].label + "</a>"
-            $('#publication3').append(li)
-            }
-        },
-        error: function() {
-          alert('No text to show')
-        }
-      });
-    */
 }
 
 // function to set a given theme/color-scheme
@@ -90,7 +44,9 @@ function setTheme(themeName) {
 (function () {
       if (localStorage.getItem('theme') === 'theme-bauhaus') {
           setTheme('theme-bauhaus');
+      } else if (localStorage.getItem('theme') === 'theme-art_nouveau') {
+          setTheme('theme-art_nouveau');
       } else {
-          setTheme('theme-bauhaus');
+        setTheme('theme-art_deco');
       }
 })();
