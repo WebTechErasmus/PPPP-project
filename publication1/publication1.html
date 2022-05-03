@@ -32,8 +32,13 @@
   </head>
 
   <body>
-    <div class="sidebarMetadataClosed"></div>
-    <!--<metadata-component></metadata-component>-->
+    <div class="sidebarMetadataClosed" id="arrow-button">
+      <img
+        class="arrow"
+        src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+      />
+    </div>
+    <metadata-component></metadata-component>
     <navbar-component></navbar-component>
     <sidebar-component></sidebar-component>
     <div class="container">
@@ -119,6 +124,16 @@
         var divId = $(this).attr("divId");
         $("#" + divId).hide();
         $("#showall").show();
+      });
+
+      $(".sidebarMetadataClosed").bind("click", function () {
+        $("#arrow-button").hide();
+        $("#metadata").show();
+      });
+
+      $(".closeMetadata").bind("click", function () {
+        $("#arrow-button").show();
+        $("#metadata").hide();
       });
     </script>
 

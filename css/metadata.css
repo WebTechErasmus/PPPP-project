@@ -1,16 +1,16 @@
-.theme-bauhaus{
+.theme-bauhaus {
   --color: #21409a;
   --color-hover: #193687;
 }
 
-.theme-art_nouveau{
+.theme-art_nouveau {
   --color: #d4c3a5;
   --color-hover: #879c7d;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
 }
 
 .sidebarMetadata {
@@ -31,6 +31,25 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
+  background-color: #a3a3a3;
+  width: 20px;
+  display: none;
+}
+
+.arrow {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  margin: auto;
+  transition: background-color 300ms;
+}
+
+.closeMetadata {
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 2%;
+  transition: background-color 300ms;
   background-color: var(--color);
 }
 
@@ -50,7 +69,7 @@
   background-color: #eee;
   border: #eee;
   color: black;
-  padding: 10px 24px;
+  padding: 10px 10px;
   margin-bottom: 10%;
   cursor: pointer;
   width: 80%;
@@ -109,4 +128,24 @@
 
 .openbtn {
   margin-top: 56px;
+}
+
+@media only screen and (max-width: 900px) {
+  .activeButton {
+    font-size: 10px;
+  }
+
+  .button-group {
+    margin-left: 20px;
+  }
+
+  .sidebarMetadata {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebarMetadata {
+    width: 30%;
+  }
 }
