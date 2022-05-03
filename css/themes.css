@@ -8,6 +8,20 @@ body {
     background: var(--background-img);
     background-position: center;
 }
+.theme-baroque {
+    --color-primary: yellow;
+    --color-secondary: #ffde17;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #ffffff;
+    --font-header: #000000;
+    --font-family: "Arial", sans-serif;
+    --font-header: "Arial", sans-serif;
+    --border-radius-button: 5px;
+    --width-button: 120px;
+    --height-button: 50px;
+}
 .theme-bauhaus {
     --color-primary: #be1e2d;
     --color-secondary: #ffde17;
@@ -59,7 +73,34 @@ body {
     --background-img: #000000 url("../img/background_art_deco.png") repeat-y;
     --background-size: contain;
 }
-
+.theme-brody {
+    --color-primary: green;
+    --color-secondary: #ffde17;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #ffffff;
+    --font-header: #000000;
+    --font-family: "Arial", sans-serif;
+    --font-header: "Arial", sans-serif;
+    --border-radius-button: 5px;
+    --width-button: 120px;
+    --height-button: 50px;
+}
+.theme-future {
+    --color-primary: pink;
+    --color-secondary: #ffde17;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #ffffff;
+    --font-header: #000000;
+    --font-family: "Arial", sans-serif;
+    --font-header: "Arial", sans-serif;
+    --border-radius-button: 5px;
+    --width-button: 120px;
+    --height-button: 50px;
+}
 .container {
     width: 60%;
     height: 100%;

@@ -17,6 +17,20 @@ body {
   --color-hover: #bb9355
 }
 
+.theme-baroque {
+  --color: #dbc48e;
+  --color-hover: #bb9355
+}
+
+.theme-brody {
+  --color: #dbc48e;
+  --color-hover: #bb9355
+}
+.theme-future {
+  --color: #dbc48e;
+  --color-hover: #bb9355
+}
+
 .sidebar {
   height: 100%;
   width: 0;
