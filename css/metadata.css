@@ -1,16 +1,49 @@
-.theme-bauhaus {
+.theme-bauhaus{
   --color: #21409a;
   --color-hover: #193687;
+  --color-text: white;
+  --color-button: #be1e2d;
+  --font-color-button: white;
 }
 
-.theme-art_nouveau {
+.theme-art_nouveau{
   --color: #d4c3a5;
   --color-hover: #879c7d;
+  --color-text: white;
+  --color-button: #879c7d;
+  --font-color-button: black;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
   --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: #1c2841;
+  --font-color-button: white;
+  
+}
+
+.theme-baroque {
+  --color: #850101;
+  --color-hover: white;
+  --color-text: #bb9355;
+  --color-button: #034B03;
+  --font-color-button: #b49b5b;
+}
+
+.theme-brody {
+  --color: #dbc48e;
+  --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: ;
+  --font-color-button: ;
+}
+.theme-future {
+  --color: #dbc48e;
+  --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: ;
+  --font-color-button: ;
 }
 
 .sidebarMetadata {
@@ -31,7 +64,7 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: #a3a3a3;
+  background-color: var(--color);
   width: 20px;
   display: none;
 }
@@ -57,7 +90,7 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
-  color: #f1f1f1;
+  color: var(--color-text);
   display: block;
 }
 
@@ -66,9 +99,9 @@
 }
 
 .button-group button {
-  background-color: #eee;
+  background-color: var(--color-button);
   border: #eee;
-  color: black;
+  color: var(--font-color-button);
   padding: 10px 10px;
   margin-bottom: 10%;
   cursor: pointer;
@@ -113,9 +146,9 @@
 }
 
 .back-button {
-  background-color: var(--color-hover);
+  background-color: var(--color-button);
   border: var(--color-hover);
-  color: #f1f1f1;
+  color: var(--font-color-button);
   padding: 5px 7px;
   cursor: pointer;
   border: none;
