@@ -22,14 +22,14 @@ function main() {
           d[i].url +
           ">" +
           d[i].label +
-          "</a><div id=publication" +
+          "</a><div id=Topic" +
           (i+1) +
           "></div>";
         $("#mySidebar").append(li);
       }
     },
     error: function () {
-      alert("No publication to show");
+      alert("No topic to show");
     },
   });
 }

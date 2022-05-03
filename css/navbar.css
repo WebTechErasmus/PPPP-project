@@ -2,30 +2,36 @@
 .theme-bauhaus{
   --color: #21409a;
   --color-hover: #193687;
+  --color-text: white;
 }
 
 .theme-art_nouveau{
   --color: #d4c3a5;
   --color-hover: #879c7d;
+  --color-text: white;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 
 .theme-baroque {
-  --color: #dbc48e;
-  --color-hover: #bb9355
+  --color: #850101;
+  --color-hover: #bb9355;
+  --color-text: #b49b5b;
 }
 
 .theme-brody {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 .theme-future {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 
 .navbar-custom {
@@ -42,12 +48,12 @@
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 /* change the color of active or hovered links */

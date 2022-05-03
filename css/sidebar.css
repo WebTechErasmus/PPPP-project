@@ -5,30 +5,36 @@ body {
 .theme-bauhaus{
   --color: #21409a;
   --color-hover: #193687;
+  --color-text: white;
 }
 
 .theme-art_nouveau{
   --color: #d4c3a5;
   --color-hover: #879c7d;
+  --color-text: white;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 
 .theme-baroque {
-  --color: #dbc48e;
-  --color-hover: #bb9355
+  --color: #850101;
+  --color-hover: #bb9355;
+  --color-text: #b49b5b;
 }
 
 .theme-brody {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 .theme-future {
   --color: #dbc48e;
-  --color-hover: #bb9355
+  --color-hover: #bb9355;
+  --color-text: white;
 }
 
 .sidebar {
@@ -48,7 +54,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
-  color: #f1f1f1;
+  color: var(--color-text);
   display: block;
   transition: 0.3s;
 }
@@ -78,7 +84,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   background-color: var(--color);
-  color: #f1f1f1;
+  color: var(--color-text);
   padding: 10px 15px;
   border: none;
   position: fixed;

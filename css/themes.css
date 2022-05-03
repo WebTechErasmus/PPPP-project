@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Quintessential&family=Rye&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Limelight&family=Major+Mono+Display&family=Quintessential&family=Rye&family=Sofia&display=swap');
 html,
 body {
     margin: 0;
@@ -9,22 +9,23 @@ body {
     background-position: center;
 }
 .theme-baroque {
-    --color-primary: yellow;
-    --color-secondary: #ffde17;
-    --color-accent: #21409a;
+    --color-primary: #034B03;
+    --color-accent: #850101;
     --color-background: #ffffff;
     --font-color: #000000;
-    --font-color-button: #ffffff;
+    --font-color-button: #b49b5b;
     --font-header: #000000;
     --font-family: "Arial", sans-serif;
-    --font-header: "Arial", sans-serif;
+    --font-header: 'Fleur De Leah', cursive;
     --border-radius-button: 5px;
     --width-button: 120px;
     --height-button: 50px;
+    --margin: 5%;
+    --background-img: url("../img/border_baroque.jpg") no-repeat;
+    --padding-headerBorder: 210px; 
 }
 .theme-bauhaus {
     --color-primary: #be1e2d;
-    --color-secondary: #ffde17;
     --color-accent: #21409a;
     --color-background: #ffffff;
     --font-color: #000000;
@@ -41,7 +42,6 @@ body {
 
 .theme-art_nouveau {
     --color-primary: #879c7d;
-    --color-secondary: #a52b36;
     --color-accent: #f6c25d;
     --color-third: #cbc385;
     --color-background: #fbd499;
@@ -57,7 +57,6 @@ body {
 }
 .theme-art_deco {
     --color-primary: #1c2841;
-    --color-secondary: #3f647e;
     --color-accent: #edf3af;
     --color-third: #3f647e;
     --color-background: black;
@@ -75,7 +74,6 @@ body {
 }
 .theme-brody {
     --color-primary: green;
-    --color-secondary: #ffde17;
     --color-accent: #21409a;
     --color-background: #ffffff;
     --font-color: #000000;
@@ -89,7 +87,6 @@ body {
 }
 .theme-future {
     --color-primary: pink;
-    --color-secondary: #ffde17;
     --color-accent: #21409a;
     --color-background: #ffffff;
     --font-color: #000000;
@@ -107,23 +104,28 @@ body {
     font-family: var(--font-family);
     color: var(--font-color);
     text-transform: var(--text-transform);
+    padding: var(--padding-headerBorder);
 }
+
 .container h1 {
     color: var(--font-color-header);
     font-family: var(--font-header);
     border-style: var(--border-header);
     text-transform: none;
+    margin: var(--margin);
 }
 
 .container h2 {
     color: var(--font-color-header);
     font-family: var(--font-header);
+    margin: var(--margin);
 }
 
 .container h3 {
     color: var(--font-color-header);
     font-family: var(--font-family);
     font-weight: bold;
+    margin: var(--margin);
 }
 .container button {
     height: var(--height-button);
