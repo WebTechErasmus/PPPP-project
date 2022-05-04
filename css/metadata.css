@@ -31,7 +31,7 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: #a3a3a3;
+  background-color: var(--color);
   width: 20px;
   display: none;
 }
@@ -59,6 +59,11 @@
   font-size: 16px;
   color: #f1f1f1;
   display: block;
+}
+
+.sidebarMetadata h3 {
+  padding: 6px 8px 6px 16px;
+  font-size: 16px;
 }
 
 .button-group {
@@ -130,7 +135,10 @@
   margin-top: 56px;
 }
 
-@media only screen and (max-width: 900px) {
+.links {
+  font-size: 16px;
+}
+@media only screen and (max-width: 800px) {
   .activeButton {
     font-size: 10px;
   }
@@ -141,6 +149,10 @@
 
   .sidebarMetadata {
     width: 25%;
+  }
+
+  .links {
+    font-size: 13px;
   }
 }
 

@@ -27,11 +27,8 @@ class Metadata extends HTMLElement {
       </div>
       <div class="info" class="open_Div" id="div1">
         <h3>Info</h3>
-        <ul>
-          <li>Author:</li>
-          <li>Title:</li>
-          <li>Content:</li>
-        </ul>
+        <div id="info-content"> 
+         </div>
         <button class="back-button" divId="div1">Back</button>
       </div>
       <div class="quotes" class="open_Div" id="div2">
