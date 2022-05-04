@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-bauhaus">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -34,23 +33,28 @@
   </head>
 
   <body>
+    <div class="sidebarMetadataClosed" id="arrow-button">
+      <img
+        class="arrow"
+        src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+      />
+    </div>
     <metadata-component></metadata-component>
     <navbar-component></navbar-component>
     <sidebar-component></sidebar-component>
     <div class="container">
-        <div class="row justify-content-around">
-            <h1>Publication 3</h1>
-        </div>     
-        <div class="row justify-content-around">
-                Information about the publication theme and layout:O
-        </div>
-        <div id="text_button">
-            <div  class="row justify-content-around" id="list">
-            </div>   
-        </div>
-        <div id="text" class="row justify-content-md-center">
-          <div id="file"></div>
-        </div>
+      <div class="row justify-content-around">
+        <h1>Publication 3</h1>
+      </div>
+      <div class="row justify-content-around">
+        Information about the publication theme and layout:O
+      </div>
+      <div id="text_button">
+        <div class="row justify-content-around" id="list"></div>
+      </div>
+      <div id="text" class="row justify-content-md-center">
+        <div id="file"></div>
+      </div>
     </div>
 
     <script
@@ -120,6 +124,15 @@
         var divId = $(this).attr("divId");
         $("#" + divId).hide();
         $("#showall").show();
+      });
+      $(".sidebarMetadataClosed").bind("click", function () {
+        $("#arrow-button").hide();
+        $("#metadata").show();
+      });
+
+      $(".closeMetadata").bind("click", function () {
+        $("#arrow-button").show();
+        $("#metadata").hide();
       });
     </script>
     <!--fetching script for navbar+sidebar-->
