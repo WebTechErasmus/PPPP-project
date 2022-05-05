@@ -23,6 +23,9 @@ body {
     --margin: 5%;
     --background-img: url("../img/border_baroque.jpg") no-repeat;
     --padding-headerBorder: 210px; 
+    --column-count: 2;
+    --column-gap: 40px;
+    --coulmn-span: all;
 }
 .theme-bauhaus {
     --color-primary: #be1e2d;
@@ -86,15 +89,15 @@ body {
     --height-button: 50px;
 }
 .theme-future {
-    --color-primary: pink;
+    --color-primary: #3375A5;
     --color-accent: #21409a;
     --color-background: #ffffff;
     --font-color: #000000;
     --font-color-button: #ffffff;
     --font-header: #000000;
-    --font-family: "Arial", sans-serif;
-    --font-header: "Arial", sans-serif;
-    --border-radius-button: 5px;
+    --font-family: "Futura", sans-serif;
+    --font-header: "Futura", sans-serif;
+    --border-radius-button: 100px;
     --width-button: 120px;
     --height-button: 50px;
 }
@@ -104,7 +107,7 @@ body {
     font-family: var(--font-family);
     color: var(--font-color);
     text-transform: var(--text-transform);
-    padding: var(--padding-headerBorder);
+    padding-top: var(--padding-headerBorder);
 }
 
 .container h1 {
@@ -119,6 +122,7 @@ body {
     color: var(--font-color-header);
     font-family: var(--font-header);
     margin: var(--margin);
+    column-span: var(--coulmn-span);
 }
 
 .container h3 {
@@ -149,6 +153,8 @@ body {
 #file {
     padding: 20px;
     background-color: var(--color-background);
+    column-count: var(--column-count);
+    column-gap: var(--column-gap);
 }
 
 .container img {

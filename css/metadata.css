@@ -1,9 +1,14 @@
+body {
+  font-family: var(--font-family);
+}
 .theme-bauhaus{
   --color: #21409a;
   --color-hover: #193687;
   --color-text: white;
   --color-button: #be1e2d;
   --font-color-button: white;
+  --font-family: "Arial", sans-serif;
+  --border-radius-button: 5px;
 }
 
 .theme-art_nouveau{
@@ -12,6 +17,7 @@
   --color-text: white;
   --color-button: #879c7d;
   --font-color-button: black;
+  --font-family: "Quintessential", cursive;
 }
 
 .theme-art_deco {
@@ -20,7 +26,7 @@
   --color-text: white;
   --color-button: #1c2841;
   --font-color-button: white;
-  
+  --font-family: "Arial", sans-serif;
 }
 
 .theme-baroque {
@@ -29,6 +35,7 @@
   --color-text: #bb9355;
   --color-button: #034B03;
   --font-color-button: #b49b5b;
+  --font-family: "Arial", sans-serif;
 }
 
 .theme-brody {
@@ -37,12 +44,14 @@
   --color-text: white;
   --color-button: ;
   --font-color-button: ;
+  --font-family: "Arial", sans-serif;
 }
 .theme-future {
-  --color: #dbc48e;
-  --color-hover: #bb9355;
-  --color-text: white;
-  --color-button: ;
+  --color: white;
+  --color-hover: #D6417F;
+  --color-text: black;
+  --font-family: "Futura", sans-serif;
+  --color-button: #3375A5;
   --font-color-button: ;
 }
 
@@ -109,6 +118,7 @@
   display: block;
   border: none;
   outline: none;
+  border-radius: var(--border-radius-button);
 }
 
 .button-group button:not(:last-child) {
@@ -157,6 +167,7 @@
   bottom: 0;
   margin-left: 5px;
   margin-bottom: 5px;
+  border-radius: var(--border-radius-button);
 }
 
 .openbtn {

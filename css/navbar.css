@@ -1,37 +1,45 @@
+body {
+  font-family: var(--font-family);
+}
+.theme-baroque {
+  --color: #850101;
+  --color-hover: #bb9355;
+  --color-text: #b49b5b;
+  --font-family: "Arial", sans-serif;
+}
 
 .theme-bauhaus{
   --color: #21409a;
   --color-hover: #193687;
   --color-text: white;
+  --font-family: "Arial", sans-serif;
 }
 
 .theme-art_nouveau{
   --color: #d4c3a5;
   --color-hover: #879c7d;
   --color-text: white;
+  --font-family: "Quintessential", cursive;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
   --color-hover: #bb9355;
   --color-text: white;
-}
-
-.theme-baroque {
-  --color: #850101;
-  --color-hover: #bb9355;
-  --color-text: #b49b5b;
+  --font-family: "Arial";
 }
 
 .theme-brody {
   --color: #dbc48e;
   --color-hover: #bb9355;
   --color-text: white;
+  --font-family: "Arial";
 }
 .theme-future {
-  --color: #dbc48e;
-  --color-hover: #bb9355;
-  --color-text: white;
+  --color: white;
+  --color-hover: #D6417F;
+  --color-text: black;
+  --font-family: "Futura", sans-serif;
 }
 
 .navbar-custom {
@@ -59,7 +67,7 @@
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-hover);
 }
 
 /* for dropdown only - change the color of droodown */
@@ -67,10 +75,10 @@
   background-color: var(--color);
 }
 .navbar-custom .dropdown-item {
-  color: #ffffff;
+  color: var(--color-text);
 }
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
-  color: var(--color);
+  color: var(--color-hover);
   background-color: rgba(255, 255, 255, 0.5);
 }
