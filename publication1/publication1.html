@@ -75,9 +75,13 @@
     <!--Script for rendering different Texts-->
     <script>
       String.prototype.tpl = function (o) {
+        console.log(o);
         var r = this;
         for (var i in o) {
+          console.log(new RegExp("\\$" + i, "g"));
           r = r.replace(new RegExp("\\$" + i, "g"), o[i]);
+          console.log(i);
+          console.log(r);
         }
         return r;
       };
@@ -111,8 +115,10 @@
           success: function (d) {
             $("#text").show();
             $("#file").html(d);
+            $("#metadata").show();
             addIds();
-            metaDataContent();
+            metaDataInfo();
+            metaDataCaptions();
           },
           error: function () {
             alert("Could not load file " + file);
@@ -122,6 +128,9 @@
 
       function addIds() {
         addId(".author", "author");
+        addId(".title", "title");
+        addId("publication-date", "date");
+        addId(".content", "content");
       }
 
       function addId(what, prefix) {
@@ -131,7 +140,8 @@
           elements[i].id = prefix + "-" + id++;
         }
       }
-      function metaDataContent() {
+      function metaDataInfo() {
+        $("#info-content").empty();
         addMetadata("#file .title", "#info-content", "title:");
         addMetadata("#file .author", "#info-content", "author:");
         addMetadata(
@@ -142,11 +152,21 @@
         addMetadata("#file .content", "#info-content", "summary:");
       }
 
-      function addMetadata(what, where, type) {
-        var list =
-          "<h5 class='links' >$type</h5><a class='links' href='#' >$content </a>";
+      function metaDataCaptions() {
+        $("#caption-content").empty();
+        addMetadata("#file .caption", "#caption-content");
+      }
+
+      function addMetadata(what, where, type = undefined) {
+        var li = "";
+        if (type) {
+          list =
+            "<h5 class='links' >$type</h5><a class='links' href='#' onclick='goto('$place')'>$content </a>";
+        } else {
+          list =
+            "<li><a class='links' href='#' onclick='goto('$place')'>$content </a></li>";
+        }
         var elements = $(what);
-        //$(where).empty();
         for (var i = 0; i < elements.length; i++) {
           $(where).append(
             list.tpl({
@@ -156,6 +176,15 @@
             })
           );
         }
+      }
+
+      function goto(id) {
+        var t = $(id)[0].offsetTop;
+        $("body").animate({ scrollTop: t }, 200);
+        $(id).addClass("animate");
+        setTimeout(function () {
+          $(id).removeClass("animate");
+        }, 5000);
       }
     </script>
 

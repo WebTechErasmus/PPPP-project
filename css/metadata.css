@@ -22,6 +22,7 @@
   padding-top: 60px;
   margin-top: 2%;
   background-color: var(--color);
+  display: none;
 }
 .sidebarMetadataClosed {
   height: 100%;
@@ -96,7 +97,18 @@
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
-  height: 60%;
+  padding-bottom: 30%;
+  max-height: 85%;
+  position: relative;
+  display: none;
+}
+
+.caption {
+  border-color: black;
+  background-color: #f1f1f1;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-bottom: 30%;
   position: relative;
   display: none;
 }
@@ -105,9 +117,8 @@
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
-  height: 60%;
+  padding-bottom: 30%;
   position: relative;
-  display: none;
   display: none;
 }
 
@@ -136,8 +147,15 @@
 }
 
 .links {
-  font-size: 16px;
+  font-size: 13px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .sidebarMetadata {
+    width: 20%;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .activeButton {
     font-size: 10px;
@@ -154,10 +172,7 @@
   .links {
     font-size: 13px;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  .sidebarMetadata {
-    width: 30%;
+  .sidebarMetadataClosed {
+    display: flex;
   }
 }
