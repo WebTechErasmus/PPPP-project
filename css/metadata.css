@@ -55,11 +55,23 @@
 }
 
 .sidebarMetadata h4 {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  margin-left: 7%;
   font-size: 16px;
   color: #f1f1f1;
-  display: block;
+  padding-top: 5px;
+}
+
+.back-button {
+  background-color: var(--color-hover);
+  border: var(--color-hover);
+  color: #f1f1f1;
+  padding: 5px 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 2%;
+  display: none;
 }
 
 .sidebarMetadata h3 {
@@ -98,9 +110,10 @@
   margin-left: 7%;
   margin-right: 7%;
   padding-bottom: 30%;
-  max-height: 85%;
+  max-height: 75%;
   position: relative;
   display: none;
+  overflow: scroll;
 }
 
 .caption {
@@ -109,15 +122,17 @@
   margin-left: 7%;
   margin-right: 7%;
   padding-bottom: 30%;
+  max-height: 85%;
   position: relative;
   display: none;
 }
-.quotes {
+.keyword {
   border-color: black;
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
   padding-bottom: 30%;
+  max-height: 85%;
   position: relative;
   display: none;
 }
@@ -126,20 +141,6 @@
   color: black;
   text-decoration: underline;
   font-weight: bold;
-}
-
-.back-button {
-  background-color: var(--color-hover);
-  border: var(--color-hover);
-  color: #f1f1f1;
-  padding: 5px 7px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  position: absolute;
-  bottom: 0;
-  margin-left: 5px;
-  margin-bottom: 5px;
 }
 
 .openbtn {
