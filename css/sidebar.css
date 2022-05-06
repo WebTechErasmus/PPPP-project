@@ -38,7 +38,7 @@ body {
 }
 .theme-future {
   --color: white;
-  --color-hover: #D6417F;
+  --color-hover: #d398f4;
   --color-text: black;
   --font-family: "Futura", sans-serif;
 }
@@ -92,7 +92,7 @@ body {
   background-color: var(--color);
   color: var(--color-text);
   padding: 10px 15px;
-  border: none;
+  border-style: var(--border-style);
   position: fixed;
 }
 

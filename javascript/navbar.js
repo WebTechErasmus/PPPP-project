@@ -38,7 +38,7 @@ class Navbar extends HTMLElement {
             <a class="dropdown-item" title="theme1" href="#" onclick="setTheme('theme-art_nouveau')">Art Nouveau</a>
             <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-art_deco')">Art Deco</a>
             <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-brody')">Neville Brody</a>
-            <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-future')">Future</a>
+            <a class="dropdown-item" title="theme2" href="#" onclick="setTheme('theme-future')">Modern Web Design</a>
             </div>
           </li>
           <li class="nav-item">
