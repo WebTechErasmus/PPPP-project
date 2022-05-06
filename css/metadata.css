@@ -1,16 +1,59 @@
+body {
+  font-family: var(--font-family);
+}
 .theme-bauhaus {
   --color: #21409a;
   --color-hover: #193687;
+  --color-text: white;
+  --color-button: #be1e2d;
+  --font-color-button: white;
+  --font-family: "Arial", sans-serif;
+  --border-radius-button: 5px;
 }
 
 .theme-art_nouveau {
   --color: #d4c3a5;
   --color-hover: #879c7d;
+  --color-text: white;
+  --color-button: #879c7d;
+  --font-color-button: black;
+  --font-family: "Quintessential", cursive;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
   --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: #1c2841;
+  --font-color-button: white;
+  --font-family: "Arial", sans-serif;
+}
+
+.theme-baroque {
+  --color: #850101;
+  --color-hover: white;
+  --color-text: #bb9355;
+  --color-button: #034b03;
+  --font-color-button: #b49b5b;
+  --font-family: "Arial", sans-serif;
+}
+
+.theme-brody {
+  --color: #dbc48e;
+  --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: ;
+  --font-color-button: ;
+  --font-family: "Arial", sans-serif;
+}
+.theme-future {
+  --color: white;
+  --color-hover: #d6417f;
+  --color-text: black;
+  --font-family: "Futura", sans-serif;
+  --color-button: #654ce6;
+  --font-color-button: ;
+  --border-style: solid;
 }
 
 .sidebarMetadata {
@@ -35,6 +78,7 @@
   background-color: var(--color);
   width: 20px;
   display: none;
+  border-left-style: var(--border-style);
 }
 
 .arrow {
@@ -65,13 +109,14 @@
 .back-button {
   background-color: var(--color-hover);
   border: var(--color-hover);
-  color: #f1f1f1;
   padding: 5px 7px;
   cursor: pointer;
   border: none;
   outline: none;
   margin-left: 2%;
   display: none;
+  color: var(--font-color-button);
+  border-radius: var(--border-radius-button);
 }
 
 .sidebarMetadata h3 {
@@ -84,9 +129,9 @@
 }
 
 .button-group button {
-  background-color: #eee;
+  background-color: var(--color-button);
   border: #eee;
-  color: black;
+  color: var(--font-color-button);
   padding: 10px 10px;
   margin-bottom: 10%;
   cursor: pointer;
@@ -94,6 +139,7 @@
   display: block;
   border: none;
   outline: none;
+  border-radius: var(--border-radius-button);
 }
 
 .button-group button:not(:last-child) {

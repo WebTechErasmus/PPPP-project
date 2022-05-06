@@ -1,14 +1,14 @@
 [
     {
-        "label": "Publication 1",
+        "label": "Topic 1",
         "url": "/publication1/publication1.html"
     },
     {
-        "label": "Publication 2",
+        "label": "Topic 2",
         "url": "/publication2/publication2.html"
     },
     {
-        "label": "Publication 3",
+        "label": "Topic 3",
         "url": "/publication3/publication3.html"
     }
 ]

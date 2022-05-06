@@ -1,0 +1,74 @@
+body {
+    background-image: var(--background-image);
+    background-size: cover;
+}
+
+.theme-bauhaus{
+    --color: #21409a;
+    --color-hover: #193687;
+    --color-text: white;
+    --color-button: #be1e2d;
+    --font-color-button: white;
+    --font-family: "Arial", sans-serif;
+  }
+  
+  .theme-art_nouveau{
+    --color: #d4c3a5;
+    --color-hover: #879c7d;
+    --color-text: white;
+    --color-button: #879c7d;
+    --font-color-button: black;
+    --font-family: "Quintessential", cursive;
+}
+  
+.theme-art_deco {
+    --color: #dbc48e;
+    --color-hover: #bb9355;
+    --color-text: white;
+    --color-button: #1c2841;
+    --font-color-button: white;
+    --font-family: "Arial", sans-serif;
+    --font-color-header: #b49b5b;
+}
+  
+  .theme-baroque {
+    --color: #850101;
+    --color-hover: white;
+    --color-text: #bb9355;
+    --color-button: #034B03;
+    --font-color-button: #b49b5b;
+    --font-family: "Arial", sans-serif;
+  }
+  
+  .theme-brody {
+    --color: #dbc48e;
+    --color-hover: #bb9355;
+    --color-text: white;
+    --color-button: ;
+    --font-color-button: ;
+    --font-family: "Arial", sans-serif;
+}
+.theme-future {
+    --color: white;
+    --color-hover: #D6417F;
+    --color-text: black;
+    --font-family: "Futura", sans-serif;
+    --color-button: white;
+    --font-color-button: ;
+    --background-image: url(../img/hero_image_future.jpeg);
+    --font-color-header: white;
+}
+
+.container h1{
+    font-family: var(--font-header);
+}
+.container button {
+    height: var(--height-button);
+    width: var(--width-button);
+    color: var(--font-color-button);
+    background: var(--color-button);
+    border: 0;
+    border-radius: var(--border-radius-button);
+    text-align: center;
+    font-size: 15px;
+}

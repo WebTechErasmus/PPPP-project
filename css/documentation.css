@@ -1,0 +1,26 @@
+.theme-bauhaus{
+    --background-color: white;
+}
+
+.theme-art_nouveau{
+    --background-color: white;
+}
+
+.theme-art_deco {
+    --background-color: black;
+}
+
+.theme-baroque {
+    --background-color: white;
+}
+
+.theme-brody {
+    --background-color: white;
+}
+.theme-future {
+    --background-color: white;
+}
+
+.container{
+    background-color: var(--background-color);
+}

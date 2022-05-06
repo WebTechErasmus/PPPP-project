@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/themes.css"/>
     <link rel="stylesheet" href="./css/marginTop.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Homepage</title>
 
     <script src="../javascript/sidebar.js" type="text/javascript" defer></script>
@@ -32,12 +33,13 @@
     
     <div class="container">
       <div class="row justify-content-around">
-        <h1>Project Name</h1>
+        <h1>Information Modeling and Web Technology</h1>
       </div>    
+    </p>
           <form id="form" class="row justify-content-around">
-            <button type="submit" formaction="../publication1/publication1.html" class="btn btn-secondary">Publication 1</button>
-            <button type="submit" formaction="../publication2/publication2.html" class="btn btn-secondary">Publication 2</button>
-            <button type="submit" formaction="../publication3/publication3.html" class="btn btn-secondary">Publication 3</button>
+            <button type="submit" formaction="../publication1/publication1.html" class="btn btn-secondary">Topic 1</button>
+            <button type="submit" formaction="../publication2/publication2.html" class="btn btn-secondary">Topic 2</button>
+            <button type="submit" formaction="../publication3/publication3.html" class="btn btn-secondary">Topic 3</button>
           </form>
     
     </div>
@@ -58,11 +60,17 @@
           (function () {
             if (localStorage.getItem('theme') === 'theme-bauhaus') {
               setTheme('theme-bauhaus');
-              } else if (localStorage.getItem('theme') === 'theme-art_nouveau') {
-                setTheme('theme-art_nouveau');
-              } else {
-              setTheme('theme-art_deco');
-            }
+          } else if (localStorage.getItem('theme') === 'theme-art_nouveau') {
+              setTheme('theme-art_nouveau');
+          } else if (localStorage.getItem('theme') === 'theme-baroque') {
+              setTheme('theme-baroque');
+          } else if (localStorage.getItem('theme') === 'theme-brody') {
+              setTheme('theme-brody');
+          } else if (localStorage.getItem('theme') === 'theme-future') {
+              setTheme('theme-future');
+          } else {
+            setTheme('theme-art_deco');
+          }
           })();
         </script>
 
@@ -97,7 +105,7 @@
                 d[i].url +
                 ">" +
                 d[i].label +
-                "</a><div id=publication" +
+                "</a><div id=Topic" +
                 (i+1) +
                 "></div>";
               $("#mySidebar").append(li);
