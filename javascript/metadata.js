@@ -9,35 +9,32 @@ class Metadata extends HTMLElement {
     <div class="closeMetadata" id="closeMetadata">
     <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="" title="" >
     </div>
-      <h4>Metadata &amp; additional services</h4>
+      <h4 id="metadataTitle">Metadata &amp; additional services</h4>
       <div class="button-group" id="showall">
         <!--javascript:void(0) if the redirection path is undefined the browser stays on the same page -->
-        <button class="activeButton" href="javascript:void(0);" divId="div1">
+        <button class="activeButton" href="javascript:void(0);" divId="Info">
           Info
         </button>
-        <button class="activeButton" href="javascript:void(0);" divId="div2">
+        <button class="activeButton" href="javascript:void(0);" divId="Caption">
+          Captions
+        </button>
+        <button class="activeButton" href="javascript:void(0);" divId="Quotes">
           Quotes
         </button>
-        <button class="activeButton" href="javascript:void(0);" divId="div3">
-          Additional
-        </button>
-        <button class="activeButton" href="javascript:void(0);" divId="div4">
-          Additional
-        </button>
       </div>
-      <div class="info" class="open_Div" id="div1">
-        <h3>Info</h3>
-        <ul>
-          <li>Author:</li>
-          <li>Title:</li>
-          <li>Content:</li>
-        </ul>
-        <button class="back-button" divId="div1">Back</button>
+      <div class="info" class="open_Div" id="Info">
+        <div id="info-content"> 
+         </div>
+        <button class="back-button" divId="Info">Back</button>
       </div>
-      <div class="quotes" class="open_Div" id="div2">
-        <h3>Quotes</h3>
-        <button class="back-button" divId="div2">Back</button>
+      <div class="caption" class="open_Div" id="Caption">
+      <div id="caption-content"> 
       </div>
+        <button class="back-button" divId="Caption">Back</button>
+      </div>
+      <div class="quotes" class="open_Div" id="Quotes">
+      <button class="back-button" divId="Quotes">Back</button>
+    </div>
     </div>
   
         `;

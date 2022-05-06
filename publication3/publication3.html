@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-bauhaus">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -34,6 +33,12 @@
   </head>
 
   <body>
+    <div class="sidebarMetadataClosed" id="arrow-button">
+      <img
+        class="arrow"
+        src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+      />
+    </div>
     <metadata-component></metadata-component>
     <navbar-component></navbar-component>
     <sidebar-component></sidebar-component>
@@ -108,20 +113,7 @@
       }
     </script>
     <!--Script for metadata-->
-    <script>
-      $(".activeButton").bind("click", function () {
-        $("#showall").hide();
-        $(".openDiv").hide();
-        var divId = $(this).attr("divId");
-        $("#" + divId).show();
-      });
-
-      $(".back-button").bind("click", function () {
-        var divId = $(this).attr("divId");
-        $("#" + divId).hide();
-        $("#showall").show();
-      });
-    </script>
+    <script src="../javascript/metadataScript.js"></script>
     <!--fetching script for navbar+sidebar-->
     <script src="../javascript/repeatingJS.js"></script>
   </body>
