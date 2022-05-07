@@ -48,8 +48,8 @@ function setTheme(themeName) {
           setTheme('theme-art_nouveau');
       } else if (localStorage.getItem('theme') === 'theme-baroque') {
           setTheme('theme-baroque');
-      } else if (localStorage.getItem('theme') === 'theme-brody') {
-          setTheme('theme-brody');
+      } else if (localStorage.getItem('theme') === 'theme-pop') {
+          setTheme('theme-pop');
       } else if (localStorage.getItem('theme') === 'theme-future') {
           setTheme('theme-future');
       } else {

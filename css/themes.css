@@ -75,16 +75,20 @@ body {
     --background-img: #000000 url("../img/background_art_deco.png") repeat-y;
     --background-size: contain;
 }
-.theme-brody {
-    --color-primary: green;
+.theme-pop {
+    --color-primary: #fd97d1;
     --color-accent: #21409a;
-    --color-background: #ffffff;
+    --color-background: #fff8a7;
     --font-color: #000000;
     --font-color-button: #ffffff;
+    --font-color-header: #fd97d1;
+    --text-shadow: 4px 0 1px #1c2b48;
+    --font-weight: bold;
     --font-header: #000000;
-    --font-family: "Arial", sans-serif;
-    --font-header: "Arial", sans-serif;
+    --font-family: "Comic Sans", cursive;
+    --font-header: "Comic Sans MS", "Comic Sans", cursive;
     --border-radius-button: 5px;
+    --background-img: #fff8a7;
     --width-button: 120px;
     --height-button: 50px;
 }
@@ -116,6 +120,8 @@ body {
     border-style: var(--border-header);
     text-transform: none;
     margin: var(--margin);
+    text-shadow: var(--text-shadow);
+    font-weight: var(--font-weight);
 }
 
 .container h2 {

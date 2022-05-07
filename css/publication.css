@@ -1,3 +1,26 @@
+.theme-bauhaus{
+  --color-hover: #193687;
+}
+
+.theme-art_nouveau{
+  --color-hover: #879c7d;
+}
+
+.theme-art_deco {
+  --color-hover: #bb9355;
+}
+
+.theme-baroque {
+  --color-hover: white;
+}
+
+.theme-pop {
+  --color-hover: #1414ff;
+}
+.theme-future {
+  --color-hover: #D6417F;
+}
+
 #texts a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -14,3 +37,9 @@
 .container {
   margin-top: 70px;
 }
+
+.container button:hover {
+  background-color: var(--color-hover);
+}
+
+
