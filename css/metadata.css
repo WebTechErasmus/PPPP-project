@@ -1,16 +1,59 @@
+body {
+  font-family: var(--font-family);
+}
 .theme-bauhaus {
   --color: #21409a;
   --color-hover: #193687;
+  --color-text: white;
+  --color-button: #be1e2d;
+  --font-color-button: white;
+  --font-family: "Arial", sans-serif;
+  --border-radius-button: 5px;
 }
 
 .theme-art_nouveau {
   --color: #d4c3a5;
   --color-hover: #879c7d;
+  --color-text: white;
+  --color-button: #879c7d;
+  --font-color-button: black;
+  --font-family: "Quintessential", cursive;
 }
 
 .theme-art_deco {
   --color: #dbc48e;
   --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: #1c2841;
+  --font-color-button: white;
+  --font-family: "Arial", sans-serif;
+}
+
+.theme-baroque {
+  --color: #850101;
+  --color-hover: white;
+  --color-text: #bb9355;
+  --color-button: #034b03;
+  --font-color-button: #b49b5b;
+  --font-family: "Arial", sans-serif;
+}
+
+.theme-brody {
+  --color: #dbc48e;
+  --color-hover: #bb9355;
+  --color-text: white;
+  --color-button: ;
+  --font-color-button: ;
+  --font-family: "Arial", sans-serif;
+}
+.theme-future {
+  --color: white;
+  --color-hover: #d6417f;
+  --color-text: black;
+  --font-family: "Futura", sans-serif;
+  --color-button: #654ce6;
+  --font-color-button: ;
+  --border-style: solid;
 }
 
 .sidebarMetadata {
@@ -22,6 +65,7 @@
   padding-top: 60px;
   margin-top: 2%;
   background-color: var(--color);
+  display: none;
 }
 .sidebarMetadataClosed {
   height: 100%;
@@ -31,9 +75,10 @@
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: #a3a3a3;
+  background-color: var(--color);
   width: 20px;
   display: none;
+  border-left-style: var(--border-style);
 }
 
 .arrow {
@@ -54,11 +99,29 @@
 }
 
 .sidebarMetadata h4 {
-  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  margin-left: 7%;
   font-size: 16px;
   color: #f1f1f1;
-  display: block;
+  padding-top: 5px;
+}
+
+.back-button {
+  background-color: var(--color-hover);
+  border: var(--color-hover);
+  padding: 5px 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 2%;
+  display: none;
+  color: var(--font-color-button);
+  border-radius: var(--border-radius-button);
+}
+
+.sidebarMetadata h3 {
+  padding: 6px 8px 6px 16px;
+  font-size: 16px;
 }
 
 .button-group {
@@ -66,9 +129,9 @@
 }
 
 .button-group button {
-  background-color: #eee;
+  background-color: var(--color-button);
   border: #eee;
-  color: black;
+  color: var(--font-color-button);
   padding: 10px 10px;
   margin-bottom: 10%;
   cursor: pointer;
@@ -76,6 +139,7 @@
   display: block;
   border: none;
   outline: none;
+  border-radius: var(--border-radius-button);
 }
 
 .button-group button:not(:last-child) {
@@ -91,18 +155,31 @@
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
-  height: 60%;
+  padding-bottom: 30%;
+  max-height: 75%;
   position: relative;
   display: none;
+  overflow: scroll;
 }
-.quotes {
+
+.caption {
   border-color: black;
   background-color: #f1f1f1;
   margin-left: 7%;
   margin-right: 7%;
-  height: 60%;
+  padding-bottom: 30%;
+  max-height: 85%;
   position: relative;
   display: none;
+}
+.keyword {
+  border-color: black;
+  background-color: #f1f1f1;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-bottom: 30%;
+  max-height: 85%;
+  position: relative;
   display: none;
 }
 
@@ -112,25 +189,21 @@
   font-weight: bold;
 }
 
-.back-button {
-  background-color: var(--color-hover);
-  border: var(--color-hover);
-  color: #f1f1f1;
-  padding: 5px 7px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  position: absolute;
-  bottom: 0;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-
 .openbtn {
   margin-top: 56px;
 }
 
-@media only screen and (max-width: 900px) {
+.links {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sidebarMetadata {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .activeButton {
     font-size: 10px;
   }
@@ -142,10 +215,11 @@
   .sidebarMetadata {
     width: 25%;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .sidebarMetadata {
-    width: 30%;
+  .links {
+    font-size: 13px;
+  }
+  .sidebarMetadataClosed {
+    display: flex;
   }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Major+Mono+Display&family=Quintessential&family=Rye&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Limelight&family=Major+Mono+Display&family=Quintessential&family=Rye&family=Sofia&display=swap');
 html,
 body {
     margin: 0;
@@ -8,9 +8,27 @@ body {
     background: var(--background-img);
     background-position: center;
 }
+.theme-baroque {
+    --color-primary: #034B03;
+    --color-accent: #850101;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #b49b5b;
+    --font-header: #000000;
+    --font-family: "Arial", sans-serif;
+    --font-header: 'Fleur De Leah', cursive;
+    --border-radius-button: 5px;
+    --width-button: 120px;
+    --height-button: 50px;
+    --margin: 5%;
+    --background-img: url("../img/border_baroque.jpg") no-repeat;
+    --padding-headerBorder: 210px; 
+    --column-count: 2;
+    --column-gap: 40px;
+    --coulmn-span: all;
+}
 .theme-bauhaus {
     --color-primary: #be1e2d;
-    --color-secondary: #ffde17;
     --color-accent: #21409a;
     --color-background: #ffffff;
     --font-color: #000000;
@@ -27,7 +45,6 @@ body {
 
 .theme-art_nouveau {
     --color-primary: #879c7d;
-    --color-secondary: #a52b36;
     --color-accent: #f6c25d;
     --color-third: #cbc385;
     --color-background: #fbd499;
@@ -43,7 +60,6 @@ body {
 }
 .theme-art_deco {
     --color-primary: #1c2841;
-    --color-secondary: #3f647e;
     --color-accent: #edf3af;
     --color-third: #3f647e;
     --color-background: black;
@@ -59,30 +75,61 @@ body {
     --background-img: #000000 url("../img/background_art_deco.png") repeat-y;
     --background-size: contain;
 }
-
+.theme-brody {
+    --color-primary: green;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #ffffff;
+    --font-header: #000000;
+    --font-family: "Arial", sans-serif;
+    --font-header: "Arial", sans-serif;
+    --border-radius-button: 5px;
+    --width-button: 120px;
+    --height-button: 50px;
+}
+.theme-future {
+    --color-primary: #654ce6;
+    --color-accent: #21409a;
+    --color-background: #ffffff;
+    --font-color: #000000;
+    --font-color-button: #ffffff;
+    --font-header: #000000;
+    --font-family: "Futura", sans-serif;
+    --font-header: "Futura", sans-serif;
+    --border-radius-button: 100px;
+    --width-button: 120px;
+    --height-button: 50px;
+}
 .container {
     width: 60%;
     height: 100%;
     font-family: var(--font-family);
     color: var(--font-color);
     text-transform: var(--text-transform);
+    padding-top: var(--padding-headerBorder);
 }
+
 .container h1 {
     color: var(--font-color-header);
     font-family: var(--font-header);
     border-style: var(--border-header);
     text-transform: none;
+    margin: var(--margin);
 }
 
 .container h2 {
     color: var(--font-color-header);
     font-family: var(--font-header);
+    margin: var(--margin);
+    column-span: var(--coulmn-span);
 }
 
 .container h3 {
     color: var(--font-color-header);
     font-family: var(--font-family);
     font-weight: bold;
+    margin: var(--margin);
 }
 .container button {
     height: var(--height-button);
@@ -106,6 +153,8 @@ body {
 #file {
     padding: 20px;
     background-color: var(--color-background);
+    column-count: var(--column-count);
+    column-gap: var(--column-gap);
 }
 
 .container img {
