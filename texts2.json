@@ -1,5 +1,9 @@
 [
     {
+        "label": "Text 1",
+        "url": "/publication2/text1.html"
+    },
+    {
         "label": "Text 2",
         "url": "/publication2/text2.html"
     }
