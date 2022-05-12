@@ -70,7 +70,7 @@ function metaDataContent() {
 function addMetadata(what, where, type = undefined) {
   var list = "";
   if (type == "keywords") {
-    list = `<input type="checkbox" class='links' onchange="highlightKeywords('$place', this)">$content </input><br/>`;
+    list = `<input type="checkbox" class='links'  onchange="highlightKeywords( this, '$content')">$content </input><br/>`;
   } else if (type) {
     list = `<h5 class='links' >$type</h5><a class='links' href='#' onclick="scrollToElement('$place')">$content </a>`;
   } else {
@@ -91,7 +91,7 @@ function addMetadata(what, where, type = undefined) {
 function scrollToElement(id) {
   $("html, body").animate(
     {
-      scrollTop: $(id).offset().top - 60,
+      scrollTop: $(id).offset().top - 150,
     },
     300
   );
@@ -102,6 +102,9 @@ function scrollToElement(id) {
 }
 
 function highlightKeywords(id, el) {
-  el.checked = !el.checked;
-  console.log(document.getElementById(id));
+  if (id.checked) {
+    $("." + el).css("background", "#ffdf65");
+  } else {
+    $("." + el).css("background", "none");
+  }
 }

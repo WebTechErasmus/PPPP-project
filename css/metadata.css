@@ -197,6 +197,10 @@ body {
   font-size: 13px;
 }
 
+.sidebarMetadata mark {
+  color: #007bff;
+}
+
 @media only screen and (max-width: 1000px) {
   .sidebarMetadata {
     width: 20%;
