@@ -91,7 +91,7 @@ function addMetadata(what, where, type = undefined) {
 function scrollToElement(id) {
   $("html, body").animate(
     {
-      scrollTop: $(id).offset().top - 150,
+      scrollTop: $(id).offset().top - 500,
     },
     300
   );
