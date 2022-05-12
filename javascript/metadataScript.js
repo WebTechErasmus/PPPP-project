@@ -29,6 +29,7 @@ $(".closeMetadata").bind("click", function () {
   $("#metadata").hide();
 });
 
+//regex for tag strings
 String.prototype.tpl = function (o) {
   var r = this;
   for (var i in o) {
@@ -42,8 +43,8 @@ function addElementIds() {
   addElementId("p.title", "title");
   addElementId("p.publication-date", "date");
   addElementId("p.content", "content");
-  addElementId("p.caption", "caption");
-  addElementId("li.keyword", "keyword");
+  addElementId("p.captions", "caption");
+  addElementId("p.keyword", "keyword");
 }
 
 function addElementId(what, name) {
@@ -62,13 +63,15 @@ function metaDataContent() {
   addMetadata("#file .author", "#info-content", "author:");
   addMetadata("#file .publication-date", "#info-content", "publication date:");
   addMetadata("#file .content", "#info-content", "summary:");
-  addMetadata("#file .caption", "#caption-content");
-  addMetadata("#file .keyword", "#keyword-content");
+  addMetadata("#file .captions", "#caption-content");
+  addMetadata("#file .keyword", "#keyword-content", "keywords");
 }
 
 function addMetadata(what, where, type = undefined) {
   var list = "";
-  if (type) {
+  if (type == "keywords") {
+    list = `<input type="checkbox" class='links' onchange="highlightKeywords('$place', this)">$content </input><br/>`;
+  } else if (type) {
     list = `<h5 class='links' >$type</h5><a class='links' href='#' onclick="scrollToElement('$place')">$content </a>`;
   } else {
     list = `<li><a class='links' href='#' onclick="scrollToElement('$place')">$content </a></li>`;
@@ -96,4 +99,9 @@ function scrollToElement(id) {
   setTimeout(function () {
     $(id).css("backgroundColor", "unset");
   }, 2000);
+}
+
+function highlightKeywords(id, el) {
+  el.checked = !el.checked;
+  console.log(document.getElementById(id));
 }
