@@ -40,13 +40,17 @@ body {
     --font-family: "Arial", sans-serif;
   }
   
-  .theme-brody {
-    --color: #dbc48e;
-    --color-hover: #bb9355;
+.theme-pop {
+    --color: #67c4cc;
+    --color-hover: #1414ff;
     --color-text: white;
-    --color-button: ;
-    --font-color-button: ;
-    --font-family: "Arial", sans-serif;
+    --color-button: #fd97d1;
+    --font-color-button: white;
+    --font-family: "Comic Sans", cursive;
+    --dots-height: 100px;
+    --dots-background: radial-gradient(white 20%, transparent 20%);
+    --dots-background-position: 0 0;
+    --dots-background-size: 50px 50px;
 }
 .theme-future {
     --color: white;
@@ -71,4 +75,15 @@ body {
     border-radius: var(--border-radius-button);
     text-align: center;
     font-size: 15px;
+}
+
+.container button:hover {
+    background-color: var(--color-hover);
+  }
+
+.dots {
+    height: var(--dots-height);
+    background: var(--dots-background);
+    background-position: var(--dots-background-position);
+    background-size: var(--dots-background-size);
 }

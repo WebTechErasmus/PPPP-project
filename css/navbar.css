@@ -29,9 +29,9 @@ body {
   --font-family: "Arial";
 }
 
-.theme-brody {
-  --color: #dbc48e;
-  --color-hover: #bb9355;
+.theme-pop {
+  --color: #67c4cc;
+  --color-hover: #1414ff;
   --color-text: white;
   --font-family: "Arial";
 }

@@ -38,11 +38,11 @@ body {
   --font-family: "Arial", sans-serif;
 }
 
-.theme-brody {
-  --color: #dbc48e;
-  --color-hover: #bb9355;
+.theme-pop {
+  --color: #67c4cc;
+  --color-hover: #67c4cc;
   --color-text: white;
-  --color-button: ;
+  --color-button: #fd97d1;
   --font-color-button: ;
   --font-family: "Arial", sans-serif;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .back-button {
-  background-color: var(--color-hover);
+  background-color: var(--color-button);
   border: var(--color-hover);
   padding: 5px 7px;
   cursor: pointer;
@@ -117,6 +117,10 @@ body {
   display: none;
   color: var(--font-color-button);
   border-radius: var(--border-radius-button);
+}
+
+.back-button:hover {
+  background-color: var(--color-hover);
 }
 
 .sidebarMetadata h3 {
