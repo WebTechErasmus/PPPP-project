@@ -23,4 +23,5 @@
 
 .container{
     background-color: var(--background-color);
+    padding-top: 0;
 }
