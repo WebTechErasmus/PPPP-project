@@ -1,14 +1,14 @@
 [
     {
-        "label": "Topic 1",
+        "label": "Interviews of artists",
         "url": "/publication1/publication1.html"
     },
     {
-        "label": "Topic 2",
+        "label": "Retail tales",
         "url": "/publication2/publication2.html"
     },
     {
-        "label": "Topic 3",
+        "label": "History of printing",
         "url": "/publication3/publication3.html"
     }
 ]

@@ -6,5 +6,9 @@
     {
         "label": "Text 2",
         "url": "/publication2/text2.html"
+    },
+    {
+        "label": "Text 3",
+        "url": "/publication2/text3.html"
     }
 ]
