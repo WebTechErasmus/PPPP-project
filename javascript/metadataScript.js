@@ -1,4 +1,4 @@
-//script for activating the different metadata divs
+//script for activating the different divs for the metadata
 $(".activeButton").bind("click", function () {
   $("#showall").hide();
   $(".openDiv").hide();
@@ -30,31 +30,35 @@ $(".closeMetadata").bind("click", function () {
 });
 
 //regex for tag strings
-String.prototype.tpl = function (o) {
-  var r = this;
-  for (var i in o) {
-    r = r.replace(new RegExp("\\$" + i, "g"), o[i]);
+String.prototype.inputs = function (strings) {
+  var element = this;
+  for (var i in strings) {
+    element = element.replace(new RegExp("\\$" + i, "g"), strings[i]);
   }
-  return r;
+  return element;
 };
 
+//function used for setting the id for all the elements
 function addElementIds() {
   addElementId("p.author", "author");
-  addElementId("p.title", "title");
+  addElementId("h1.title", "title");
   addElementId("p.publication-date", "date");
   addElementId("p.content", "content");
   addElementId("p.captions", "caption");
   addElementId("p.keyword", "keyword");
 }
 
+//setting the id for each element in a given class
 function addElementId(what, name) {
-  var id = "0";
+  var id = 0;
   var elements = $(what);
   for (var i = 0; i < elements.length; i++) {
-    elements[i].id = name + id++;
+    elements[i].id = name + id;
+    id += 1;
   }
 }
 
+//setting the content for each of the metadata features
 function metaDataContent() {
   $("#info-content").empty();
   $("#caption-content").empty();
@@ -67,19 +71,23 @@ function metaDataContent() {
   addMetadata("#file .keyword", "#keyword-content", "keywords");
 }
 
+//creating a new element for the metadataview
+//if type is equal to keywords we add a checkbox element with the onchange method highlighKeywords
+//else if type is not keyword, but type is defined we add a hyperlink element with the onclick function scrollToElement for the info content
+//if type is not defined we add a list of the different captions in the caption div
 function addMetadata(what, where, type = undefined) {
-  var list = "";
+  var el = "";
   if (type == "keywords") {
-    list = `<input type="checkbox" class='links'  onchange="highlightKeywords( this, '$content')">$content </input><br/>`;
+    el = `<input type="checkbox" class='links'  onchange="highlightKeywords( this, '$content')">$content </input><br/>`;
   } else if (type) {
-    list = `<h5 class='links' >$type</h5><a class='links' href='#' onclick="scrollToElement('$place')">$content </a>`;
+    el = `<h5 class='links' >$type</h5><a class='links' href='#' onclick="scrollToElement('$place')">$content </a>`;
   } else {
-    list = `<li><a class='links' href='#' onclick="scrollToElement('$place')">$content </a></li>`;
+    el = `<li><a class='links' href='#' onclick="scrollToElement('$place')">$content </a></li>`;
   }
   var elements = $(what);
   for (var i = 0; i < elements.length; i++) {
     $(where).append(
-      list.tpl({
+      el.inputs({
         place: "#" + elements[i].id,
         content: elements[i].innerHTML,
         type: type,
@@ -88,6 +96,7 @@ function addMetadata(what, where, type = undefined) {
   }
 }
 
+//script for scrolling to a given element given the id of that element
 function scrollToElement(id) {
   $("html, body").animate(
     {
@@ -101,6 +110,7 @@ function scrollToElement(id) {
   }, 2000);
 }
 
+//script for highlighting keywords given in the metadataview
 function highlightKeywords(id, el) {
   if (id.checked) {
     $("." + el).css("background", "#ffdf65");
