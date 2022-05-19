@@ -63,10 +63,10 @@ function metaDataContent() {
   $("#info-content").empty();
   $("#caption-content").empty();
   $("#keyword-content").empty();
-  addMetadata("#file .title", "#info-content", "title:");
-  addMetadata("#file .author", "#info-content", "author:");
-  addMetadata("#file .publication-date", "#info-content", "publication date:");
-  addMetadata("#file .content", "#info-content", "summary:");
+  addMetadata("#file .title", "#info-content", "Title:");
+  addMetadata("#file .author", "#info-content", "Author:");
+  addMetadata("#file .publication-date", "#info-content", "Publication date:");
+  addMetadata("#file .content", "#info-content", "Summary:");
   addMetadata("#file .captions", "#caption-content");
   addMetadata("#file .keyword", "#keyword-content", "keywords");
 }
