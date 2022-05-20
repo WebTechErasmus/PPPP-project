@@ -1,6 +1,14 @@
 # PPPP-project
 
-## Baroque
+## Content
+1. [Baroque](#baroque)
+2. [Art Nouveau](#artnouveau)
+3. [Art Deco](#artdeco)
+4. [Bauhaus](#bauhaus)
+5. [90s pop](#90s)
+6. [Modern Web Design](#modern)
+
+## Baroque <a name="baroque"></a>:
 ### 1.1 Historical period
 The period of Baroque dominated from the early 17th century until the 1740s in big parts of Europe. The painters of Baroque wanted to seperate themself from the Renaissance with the use of contrast, movement, details, deep colors and achieve a sense of awe. [5] 
 
@@ -10,7 +18,7 @@ Baroque aimed to achieve a feeling of movement, emotions and drama. The color pa
 ### 1.2.1 Font Family
 The Baroque font family has several characteristics. The font usually has an enlarged x-height, see Image 1. The ascenders, the part that extends over the x-height, is reduced to cap height in the Baroque fonts. We have used Ariel, sans–serif for the long readings which respects these requirements. As well, Ariel does not have any serifs, which is also required for Baroque font. Even more characteristic for fonts in this period is forms and flourished handlettering with a contrast between thick and thin strokes. [1,2] Therefore, we have used the Fleur De Leah font for the headers, which have these characteristics. 
 
- <img src="./img/documentationimg1.png" width="600">
+ <img src="./img/documentationimg1.png" style="width:50%; height:auto ">
  Image 1: explination of font description
  
 ### 1.2.2 Sizes
@@ -28,11 +36,11 @@ The use of two columns for compact text has been dated all the way back since th
 ### 1.2.6 Images and Captions
 The ornamental elements were characteristic in the Baroque which was derived from the Renaissance. This is why we have focused on the flourished header for this theme.
 
-<img src="./img/documentationimg2.png">
+<img src="./img/documentationimg2.png" style="width:50%; height:auto ">
 Image 2: baroque book illustration
 
 
-## Art Nouveau
+## Art Nouveau <a name="artnouveau"></a>:
 
 ### 2.1 Historical period
 Art Nouveau originates from the period between 1890-1919, during the Belle Epoque period that ended with the start of World War I in 1914. Art Nouveau came as a reaction against the formal and classical approaches to design. In this period, designers started using more decorative motifs inspired by nature, as they believed that the greatest beauty was found in nature.
@@ -47,7 +55,7 @@ The color schemes are generally muted and soft, such as different tones of green
 As mentioned earlier, art nouveau was heavily inspired by nature. In our project we have chosen the font family "Quintessential". We chose this font because it has long lines and curves throughout the letters. As well as embellished stroke endings on each letter.
  For the font header we chose "Sofia", which shares many similarities with "Quintessential". These fonts seem reminiscent of caligraphy, and are all characteristics that pair well with the theme. 
  
-  <img src="./img/documentationimg3.png">
+  <img src="./img/documentationimg3.png" style="width:50%; height:auto ">
   Image 3: art noveau book
  
  ### 2.2.2 Sizes
@@ -58,7 +66,7 @@ Because of the elaborate design of art nouveau typography, it can be difficult t
 Art nouveau is characterized by soft tones of color to imitate nature. The color palette contains neutrals such as browns and greens, and some pastel shades.
 Because the theme of nature is so important in art nouveau, we have chosen to incorporate this in our design by keeping the metadata, sidebar and navbar a soft light brown. The buttons are a soft sage green, and the background for the texts are a warm beige. Image 4 is a great example of a type of color palette that was common in art nouveau.
 
- <img src="./img/documentationimg4.png">
+ <img src="./img/documentationimg4.png" style="width:50%; height:auto ">
  Image 4: art noveau color palette example 
  
 
@@ -75,7 +83,7 @@ As mentioned earlier, art nouveau is heavily influenced by nature. Therefore we 
 
 
 
-## Art Deco
+## Art Deco <a name="artdeco"></a>:
 
 ### 3.1 Historical period
 Art Deco has its origin in France in the 1920s and is characterized by the luxuries and modern styles from the 1920s and 1930s. With a sleek and anti-traditional elegance the style symbolized wealth and sophistication and was mainly used in western Europe and the United States [9] . 
@@ -86,7 +94,7 @@ Art Deco represents modern styles combined with fine craftsmanship. Elements use
 ### 3.2.1 Font Family
 The fonts used in Art Deco are inspired by rounded shapes and sharp angles, as you can see in figure 5. The style is therefore  in contrast with Art Nouveau's use of elegant curves and long lines [11]. They often use bold elongated letters and in many cases the fonts are best when they are used as headlines because of its unique and different design. In our project we have used Arial for the font family of the text, and for the headers we used Limelight. Both fonts are sans serif and limelight has a geometric style which fits the characteristics of Art Deco. 
 
-<img src="./img/documentationimg5.png">
+<img src="./img/documentationimg5.png" style="width:50%; height:auto ">
 Image 5: art deco font example
 
 ### 3.2.2 Sizes
@@ -95,7 +103,7 @@ As mentioned in 3.2.1, the Art Deco fonts often work best as headlines, and it i
 ### 3.2.3 Colors
 The colors used in the Art Deco period were often combined with high-shine silver, chrome or black accents[12]. Color combinations often consisted of bright and bold colors such as red, yellow, green, blue and pink. Neutral colors such as creams and beiges, black and white or metallics were also highly popular [13]. For the project we have used a black background together with blue buttons and a beige color for the navbar and metadata view. The combination of gold and black was widely used as well, as shown in image 6, we have achieved this with a gold header on a black background.
 
- <img src="./img/documentationimg6.png">
+ <img src="./img/documentationimg6.png" style="width:50%; height:auto ">
  Image 6: art deco design example
  
  ### 3.2.4 Margins and Borders
@@ -108,7 +116,7 @@ The layout of the pages are kept simple and elegant, with a few details around t
 ### 3.2.6 Images and Captions
 As mentioned earlier the use of ornamental design and bold geometric shapes are common features in Art Deco, and pictures and headlines are often framed using these designs. In the project we have given the header a frame consisting of multiple border lines, giving it a bold effect. 
 
-## Bauhaus
+## Bauhaus <a name="bauhaus"></a>:
 
 ### 4.1 Historical period
 Bauhaus originates from the influential art and design movement that began in 1919 in Germany.  This movement celebrated an abstract, geometric style with none or little emotion. It originated from the Bauhaus School, which encouraged their design students to use their talents to help rebuild the society after the end of World war II.
@@ -116,11 +124,11 @@ Bauhaus originates from the influential art and design movement that began in 19
 ### 4.2 Typographic properties
 The Bauhaus style encouraged to challenge everything. It's heavily influenced by minimalism, geometric shapes and a simple typography. Further the most dominant colors are the primary colors such as blue, red and yellow. This is  a result of the "Back to basics" mentality that arose. We can see an example of this in image 7.
 
+<img src="./img/documentationimg7.png" style="width:50%; height:auto ">
+Image 7: bauhaus color and shapes example
+
 ### 4.2.1 Font Family
 The bauhaus font is characterized by geometric sans-serif letterforms, and geometric shapes such as circles, triangles and rectangles. The style is supposed to be simple and minimalistic.  In our project we have used Arial for the long readings, and kept all the letters lowercase. For the headers we used "Major mono display" which is characterized by a geometric sans serif all uppercase typeface.  This fits well with the bauhaus theme because of all its geometric shapes and otherwise simple and minimalistic letters. 
-
-<img src="./img/documentationimg7.png">
-Image 7: bauhaus color and shapes example
 
 ### 4.2.2 Sizes
 To achieve the minimalism that respects the theme of bauhaus, we have chosen to not have any large borders or other disturbing elements. A trend that flourished under the Bauhaus period was the statement that it was unnecessary to have two alphabets, one for uppercase and one for lowercase letters. Therefore the whole text is set to lowercase letters.[14]
@@ -139,7 +147,7 @@ As mentioned in 4.2, Bauhaus was influenced by minimalism. Therefore we have kep
 We have no additional design for the images and caption. This is to respect the simplicity and minimalism of the bauhaus theme. 
 
 
-## 90s pop
+## 90s pop <a name="90s"></a>:
 
 ### 5.1 Historical period
 During the beginning of the 90s the graphic design went from being aesthetic to becoming a more grunge look. Towards the mid-90s the grungy style was replaced with a more bubbly style [19]. The style was inspired by pop culture, the underground music scene, rave culture and the colorful style from the 80s [20]. 
@@ -150,7 +158,7 @@ The 90s were all about creativity, experimenting and disregarding previous rules
 ### 5.2.1 Font Family
 The fonts used in the 90s were mainly sans serif fonts, and TV shows like Full House and Rugrats inspired and influenced the use of handwritten style fonts[20]. The most popular font family and the one we have used for the 90s pop theme is the comic sans. It was inspired by comic book letters and had a handwritten look. The fonts had rounded edges and many of them used drop shadows, as shown in image 8. The drop shadows were used to separate the text from the colorful backgrounds and create a 3D effect. 
 
-<img src="./img/documentationimg8.png">
+<img src="./img/documentationimg8.png" style="width:50%; height:auto ">
 Image 8: 90s pop colors and font inspiration
 
  
@@ -169,7 +177,7 @@ As mentioned in 5.2.1 we have used comic sans for the font family. Since comic s
 ### 5.2.6 Images and Captions
 As mentioned earlier, 90s pop is characterized by abstract geometric shapes and a playful style. Images had a creative vibe and often consisted of different elements combined together. 
 
-## Modern Web Design
+## Modern Web Design <a name="modern"></a>:
 
 ### 6.1 Historical period
 The typographic theme of 2020 – 2030 is hard to predict. To achieve a possible layout for this theme we have used inspiration from the trends that influence today's graphic web design and predictions done for the future.
@@ -181,7 +189,7 @@ Trends predicted for the future and in use now are influenced by the development
 ### 6.2.1 Font Family
 The focus for modern fonts is to achieve good readability. As explained earlier we are in an epoch where most web designs follow a minimalistic theme. The font should be geometrically constructed, monolinear weighted and with straight angles, which is shown in Image 9. The Geometric sans serif font Futura is widely used, and as Source 5 states this is a trend that is not going anywhere soon. Therefore, this is the font we have used. [24]
 
- <img src="./img/documentationimg9.png">
+ <img src="./img/documentationimg9.png" style="width:50%; height:auto ">
  Image 9: modern web design font example
 
 
@@ -200,85 +208,78 @@ The pages are rather simple and elegant, and the main focus is clarity and focus
 
 ### 6.2.6 Images and Captions
 Another trend that fluences over the web is hero images, shown in image 10. It is widely used to capture the reader's attention. It is a trend that is often combined with white spacing, so we have captured this on the front page of this theme. [22]
-<img src="./img/documentationimg10.png">
+
+<img src="./img/documentationimg10.png" style="width:50%; height:auto ">
+
 Image 10: modern web design hero image example
 
-<p><h3></h3></p>
-      <p></p>
-      <p><h3></h3></p>
-      <p></p>
-      <p><h3></h3></p>
-      <a href = "https://blog.thepapermillstore.com/history-of-typopgraphy-baroque/">[1],	1. The paper. (2015, March 12th). History of Typography https://blog.thepapermillstore.com/history-of-typopgraphy-baroque/
-      </a>
-      <p></p>
-      <a href = "https://fonts.adobe.com/fonts/baroque-text-jf#licensing-section">[2],	2. Baroque Text JF,  https://fonts.adobe.com/fonts/baroque-text-jf#licensing-section
-      </a>
-      <p></p>
-      <a href = "https://ourpastimes.com/colors-in-baroque-art-12587828.html">[3], Gillespie, E. (2015, September 15th) Colors in Baroque Art. Our pastimes. https://ourpastimes.com/colors-in-baroque-art-12587828.html</a>
-      <p></p> <a href = " http://www.todayifoundout.com/index.php/2016/04/bibles-printed-two-columns-instead-like-books/">[4], Samantha, (2016, April 18th). Why are bibles printed with the text in two columns instead of one?. Today I found out.  http://www.todayifoundout.com/index.php/2016/04/bibles-printed-two-columns-instead-like-books/</a>
-      <p></p><a href = "https://en.wikipedia.org/wiki/Baroque ">[5],Wikipedia. (2022, 11th May). Baroque https://en.wikipedia.org/wiki/Baroque </a>
-      <p></p><a href = "https://www.britannica.com/art/Art-Nouveau">[6], Britannica (2021, March 04th) Art Noveau https://www.britannica.com/art/Art-Nouveau</a>
-      <p></p><a href = "	https://en.wikipedia.org/wiki/Art_Nouveau
-	
-      ">[7], Wikipedia (2022, April 26th) Art Nouveau
-      https://en.wikipedia.org/wiki/Art_Nouveau
-    </a>
-      <p></p><a href = "http://www.visual-arts-cork.com/history-of-art/art-nouveau.htm
-	
-      ">[8],Visual arts cork, History of art nouveau. http://www.visual-arts-cork.com/history-of-art/art-nouveau.htm
-	
-    </a>
-      <p></p><a href = "https://www.britannica.com/art/Art-Deco">[9],	9. Britannica. (2021, February 02n). Art Deco
-        https://www.britannica.com/art/Art-Deco
-       </a>
-       <p></p><a href = "https://www.sessions.edu/notes-on-design/type-in-history-cassandres-art-deco-type/#:~:text=Art%20Deco%20type%20is%20immediately,one%20designer%20only%2C%20A.M%20Cassandre">[10], Penney, M. (2016, August 6th). Type in History: Cassandre’s Art Deco Type. Notes on design. https://www.sessions.edu/notes-on-design/type-in-history-cassandres-art-deco-type/#:~:text=Art%20Deco%20type%20is%20immediately,one%20designer%20only%2C%20A.M%20Cassandre</a>
-       <p></p><a href = "https://fontsnetwork.com/art-deco-font-family/
+[1],1. The paper. (2015, March 12th). History of Typography https://blog.thepapermillstore.com/history-of-typopgraphy-baroque/
 
-      ">[11],Art Deco Font Family, Fonts Network https://fontsnetwork.com/art-deco-font-family/ </a>
-      <a href = "https://www.thespruce.com/decorating-in-art-deco-style-1976535">[12],Flanagan, L.( 2021, February 24th) An Art Deco Interior Design Guide. The spruce. https://www.thespruce.com/decorating-in-art-deco-style-1976535 </a>
-      <a href = " http://artdecostyle.ca/art-deco-style-blog/art-deco-colours#">[13],	13. Art Deco Style (2013, March 21st) Art Deco Colours. http://artdecostyle.ca/art-deco-style-blog/art-deco-colours#
+[2],2. Baroque Text JF,  https://fonts.adobe.com/fonts/baroque-text-jf#licensing-section
 
-      </a>
-      <p></p><a href = "https://prezi.com/euqn2fxbesyg/typography-bauhaus/">[14],	14. Kovacs, P. (2018, August 3rd) Typography/Bauhaus.
-        https://prezi.com/euqn2fxbesyg/typography-bauhaus/
-       </a>
-       <p></p> <a href = "https://en.wikipedia.org/wiki/Bauhaus_(typeface)">[15],	15. Wikipedia ( 2022, May 16th), Bauhaus (typeface) https://en.wikipedia.org/wiki/Bauhaus_(typeface)
-      </a>
-      <p></p><a href = " https://www.britannica.com/topic/Bauhaus">[16], Brittanica.(2021, December 14th). Bauhaus https://www.britannica.com/topic/Bauhaus</a>
-      <p></p><a href = "	https://www.history.com/topics/art-history/bauhaus
-	
-      ">[17], History. (2018, August 21st). Bauhaus
-      https://www.history.com/topics/art-history/bauhaus
-      
-     </a>
-     <p></p><a href = "	https://en.wikipedia.org/wiki/Bauhaus
-      ">[18],	18. Wikipedia. (2022, March 24th) Bauhaus
+[3], Gillespie, E. (2015, September 15th) Colors in Baroque Art. Our pastimes. https://ourpastimes.com/colors-in-baroque-art-12587828.html
+
+[4], Samantha, (2016, April 18th). Why are bibles printed with the text in two columns instead of one?. Today I found out.  http://www.todayifoundout.com/index.php/2016/04/bibles-printed-two-columns-instead-like-books/
+
+[5],Wikipedia. (2022, 11th May). Baroque https://en.wikipedia.org/wiki/Baroque 
+
+
+[6], Britannica (2021, March 04th) Art Noveau https://www.britannica.com/art/Art-Nouveau
+
+
+[7], Wikipedia (2022, April 26th) Art Nouveau https://en.wikipedia.org/wiki/Art_Nouveau
+
+
+[8],Visual arts cork, History of art nouveau. http://www.visual-arts-cork.com/history-of-art/art-nouveau.htm
+
+
+[9],9. Britannica. (2021, February 02n). Art Deco https://www.britannica.com/art/Art-Deco
+
+
+[10], Penney, M. (2016, August 6th). Type in History: Cassandre’s Art Deco Type. Notes on design. https://www.sessions.edu/notes-on-design/type-in-history-cassandres-art-deco-type/#:~:text=Art%20Deco%20type%20is%20immediately,one%20designer%20only%2C%20A.M%20Cassandre
+
+
+[11],Art Deco Font Family, Fonts Network https://fontsnetwork.com/art-deco-font-family/ 
+
+
+[12],Flanagan, L.( 2021, February 24th) An Art Deco Interior Design Guide. The spruce. https://www.thespruce.com/decorating-in-art-deco-style-1976535 
+
+
+[13],13. Art Deco Style (2013, March 21st) Art Deco Colours. http://artdecostyle.ca/art-deco-style-blog/art-deco-colours#
+
+ 
+[14],14. Kovacs, P. (2018, August 3rd) Typography/Bauhaus. https://prezi.com/euqn2fxbesyg/typography-bauhaus/
+
+
+[15],15. Wikipedia ( 2022, May 16th), Bauhaus (typeface) https://en.wikipedia.org/wiki/Bauhaus_(typeface)
+
+
+[16], Brittanica.(2021, December 14th). Bauhaus https://www.britannica.com/topic/Bauhaus
+
+[17], History. (2018, August 21st). Bauhaus https://www.history.com/topics/art-history/bauhaus
+
+
+[18],	18. Wikipedia. (2022, March 24th) Bauhaus
       https://en.wikipedia.org/wiki/Bauhaus
-      
-     </a>
-     <p></p><a href = "https://www.xquissive.com/the-ultimate-guide-to-the-90s-graphic-design-trend/#Typography">[19],	19. Eijkenbroek, R. The Ultimate Guide to the 90's Graphic Design Trend. Xquissive. https://www.xquissive.com/the-ultimate-guide-to-the-90s-graphic-design-trend/#Typography
-      </a>
-      <p></p> <a href = " https://design.tutsplus.com/articles/90s-graphic-design-trends-from-aesthetic-fonts-grunge-patterns-and-rave-flyers--cms-35224
 
-      ">[20],Keung, L. (2022, May 10th) 90s Graphic Design Trends: From Aesthetic Fonts to Grunge Patterns and Rave Flyers https://design.tutsplus.com/articles/90s-graphic-design-trends-from-aesthetic-fonts-grunge-patterns-and-rave-flyers--cms-35224 </a>
-      <p></p><a href = "https://www.studiorubric.co/blog/insight/font-size-matters-why-you-should-design-with-a-larger-font
+[19],19. Eijkenbroek, R. The Ultimate Guide to the 90's Graphic Design Trend. Xquissive. https://www.xquissive.com/the-ultimate-guide-to-the-90s-graphic-design-trend/#Typography
 
-      ">[21], 	21. Rubric, Font size matters - why you should design with a larger font. https://www.studiorubric.co/blog/insight/font-size-matters-why-you-should-design-with-a-larger-font
-    </a>
-    <p></p><a href = "https://www.lambdatest.com/blog/web-design-trends-2020/">[22],Rajora. H (2020, September 29th) 22 Web Design Trends for 2020 You Need To Know.  https://www.lambdatest.com/blog/web-design-trends-2020/ </a>
-    <p></p> <a href = "https://eyeondesign.aiga.org/3-predictions-for-the-future-of-typography-and-1-we-hope-doesnt-come-true/">[23],Drumm, P (2019, November 7th) 3 Predictions for the future of typography (and 1 We Hope Doesnt Come True). https://eyeondesign.aiga.org/3-predictions-for-the-future-of-typography-and-1-we-hope-doesnt-come-true/ </a>
-    <p></p><a href = " https://zetafonts.com/blog/type-trends-2020/">[24],Zetafonts (2020, May) Type Trends 2020. https://zetafonts.com/blog/type-trends-2020/ </a>
-    <p></p><a href = "	https://www.schemecolor.com/visions-of-the-future.php
-      ">[25], Schemecolor. Visions of the future color scheme. 
-      https://www.schemecolor.com/visions-of-the-future.php
-     </a>
-      <p></p>
-      <p><h3></h3></p>
-      <p></p>
-      <p><h3></h3></p>
-      <p></p>
-      <p><h3></h3></p>
-      <p></p>
+
+[20],Keung, L. (2022, May 10th) 90s Graphic Design Trends: From Aesthetic Fonts to Grunge Patterns and Rave Flyers https://design.tutsplus.com/articles/90s-graphic-design-trends-from-aesthetic-fonts-grunge-patterns-and-rave-flyers--cms-35224 
+
+
+[21], 21. Rubric, Font size matters - why you should design with a larger font. https://www.studiorubric.co/blog/insight/font-size-matters-why-you-should-design-with-a-larger-font
+
+[22],Rajora. H (2020, September 29th) 22 Web Design Trends for 2020 You Need To Know.  https://www.lambdatest.com/blog/web-design-trends-2020/ 
+
+
+[23],Drumm, P (2019, November 7th) 3 Predictions for the future of typography (and 1 We Hope Doesnt Come True). https://eyeondesign.aiga.org/3-predictions-for-the-future-of-typography-and-1-we-hope-doesnt-come-true/ 
+
+[24],Zetafonts (2020, May) Type Trends 2020. https://zetafonts.com/blog/type-trends-2020/ 
+
+[25], Schemecolor. Visions of the future color scheme. https://www.schemecolor.com/visions-of-the-future.php
+
+
 
 
 
