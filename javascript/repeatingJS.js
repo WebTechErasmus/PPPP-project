@@ -50,9 +50,9 @@ function setTheme(themeName) {
           setTheme('theme-baroque');
       } else if (localStorage.getItem('theme') === 'theme-pop') {
           setTheme('theme-pop');
-      } else if (localStorage.getItem('theme') === 'theme-future') {
-          setTheme('theme-future');
+      } else if (localStorage.getItem('theme') === 'theme-art_deco') {
+          setTheme('theme-art_deco');
       } else {
-        setTheme('theme-art_deco');
+        setTheme('theme-future');
       }
 })();
