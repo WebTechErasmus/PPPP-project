@@ -38,9 +38,9 @@ body {
   --border-radius-sidebar: 5px;
 }
 .theme-future {
-  --color: white;
+  --color: #7e66f5;
   --color-hover: #d398f4;
-  --color-text: black;
+  --color-text: white;
   --font-family: "Futura", sans-serif;
 }
 

@@ -29,6 +29,7 @@ body {
     --font-color-button: white;
     --font-family: "Arial", sans-serif;
     --font-color-header: #b49b5b;
+
 }
   
   .theme-baroque {
@@ -59,8 +60,8 @@ body {
     --font-family: "Futura", sans-serif;
     --color-button: white;
     --font-color-button: ;
-    --background-image: url(../img/hero_image_future.jpeg);
     --font-color-header: white;
+    --background-image: url(../img/hero_image_future.jpeg);
 }
 
 .container h1{

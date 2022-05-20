@@ -2,7 +2,7 @@ body {
   font-family: var(--font-family);
 }
 .theme-bauhaus {
-  --color: #21409a;
+  --color-metadata: #21409a;
   --color-hover: #193687;
   --color-text: white;
   --color-button: #be1e2d;
@@ -13,7 +13,7 @@ body {
 }
 
 .theme-art_nouveau {
-  --color: #d4c3a5;
+  --color-metadata: #d4c3a5;
   --color-hover: #879c7d;
   --color-text: white;
   --color-button: #879c7d;
@@ -24,7 +24,7 @@ body {
 }
 
 .theme-art_deco {
-  --color: #dbc48e;
+  --color-metadata: #dbc48e;
   --color-hover: #bb9355;
   --color-text: white;
   --color-button: #1c2841;
@@ -34,7 +34,7 @@ body {
 }
 
 .theme-baroque {
-  --color: #850101;
+  --color-metadata: #850101;
   --color-hover: white;
   --color-text: #bb9355;
   --color-button: #034b03;
@@ -44,7 +44,7 @@ body {
 }
 
 .theme-pop {
-  --color: #67c4cc;
+  --color-metadata: #67c4cc;
   --color-hover: #67c4cc;
   --color-text: white;
   --color-button: #fd97d1;
@@ -53,7 +53,7 @@ body {
   --metadatatitle: white;
 }
 .theme-future {
-  --color: white;
+  --color-metadata: white;
   --color-hover: #d6417f;
   --color-text: black;
   --font-family: "Futura", sans-serif;
@@ -71,7 +71,7 @@ body {
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: var(--color);
+  background-color: var(--color-metadata);
   display: none;
 }
 .sidebarMetadataClosed {
@@ -82,7 +82,7 @@ body {
   top: 0;
   padding-top: 60px;
   margin-top: 2%;
-  background-color: var(--color);
+  background-color: var(--color-metadata);
   width: 20px;
   display: none;
   border-left-style: var(--border-style);
@@ -102,7 +102,7 @@ body {
   cursor: pointer;
   margin-left: 2%;
   transition: background-color 300ms;
-  background-color: var(--color);
+  background-color: var(--color-metadata);
 }
 
 .sidebarMetadata h4 {

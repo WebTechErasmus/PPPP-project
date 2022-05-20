@@ -7,6 +7,7 @@ body {
   width: 100%;
   background: var(--background-img);
   background-position: center;
+  background-size: var(--background-size);
 }
 .theme-baroque {
   --color-primary: #034b03;
@@ -26,6 +27,7 @@ body {
   --column-count: 2;
   --column-gap: 40px;
   --coulmn-span: all;
+  --height-background: 100%;
 }
 .theme-bauhaus {
   --color-primary: #be1e2d;
@@ -41,6 +43,7 @@ body {
   --height-button: 100px;
   --border-header: solid;
   --text-transform: lowercase;
+  --height-background: 100%;
 }
 
 .theme-art_nouveau {
@@ -57,6 +60,7 @@ body {
   --width-button: 120px;
   --height-button: 50px;
   --background-img: url("../img/background_Art_nouveau.jpg");
+  --height-background: fit-content;
 }
 .theme-art_deco {
   --color-primary: #1c2841;
@@ -73,7 +77,7 @@ body {
   --height-button: 50px;
   --border-header: double;
   --background-img: #000000 url("../img/background_art_deco.png") repeat-y;
-  --background-size: contain;
+  --height-background: 100%;
 }
 .theme-pop {
   --color-primary: #fd97d1;
@@ -91,9 +95,10 @@ body {
   --background-img: #fff8a7;
   --width-button: 120px;
   --height-button: 50px;
+  --height-background: fit-content;
 }
 .theme-future {
-  --color-primary: #654ce6;
+  --color-primary: #7e66f5;
   --color-accent: #21409a;
   --color-background: #ffffff;
   --font-color: #000000;
@@ -104,10 +109,11 @@ body {
   --border-radius-button: 100px;
   --width-button: 120px;
   --height-button: 50px;
+  --height-background: 100%;
 }
 .container {
   width: 60%;
-  height: 100%;
+  height: var(--height-background);
   font-family: var(--font-family);
   color: var(--font-color);
   text-transform: var(--text-transform);
@@ -133,7 +139,7 @@ body {
 
 .container h3 {
   color: var(--font-color-header);
-  font-family: var(--font-family);
+  font-family: var(--font-header);
   font-weight: bold;
   margin: var(--margin);
 }
@@ -168,6 +174,9 @@ body {
 }
 
 .container h1 mark {
+  color: var(--font-color-header) !important;
+}
+.container h3 mark {
   color: var(--font-color-header) !important;
 }
 .container mark {

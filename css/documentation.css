@@ -11,7 +11,7 @@
 }
 
 .theme-baroque {
-  --background-color: white;
+  --padding-headerBorder: 210px;
 }
 
 .theme-pop {
@@ -22,7 +22,7 @@
 }
 
 .container {
+  padding-top: var(--padding-headerBorder);
   background-color: var(--background-color);
   padding-top: 0;
-  height: fit-content;
 }
